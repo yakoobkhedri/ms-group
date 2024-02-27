@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: yekanBakh-Regular;
+
+  src: url('../src/fonts/YekanBakhFaNum-Regular.woff') format("woff");
+}
+
+@font-face {
+  font-family: yekanBakh-Bold;
+
+  src: url('../src/fonts/YekanBakhFaNum-Bold.woff') format("woff");
+}
+
+@font-face {
+  font-family: kalameh-black;
+
+  src: url('../src/fonts/kalameh/src/fonts/kalameh/KalamehWebFaNum-Black.woff') format("woff");
+}
+@font-face {
+  font-family: kalameh-light;
+
+  src: url('../src/fonts/kalameh/src/fonts/kalameh/KalamehWebFaNum-Light.woff') format("woff");
+}
+@font-face {
+  font-family: Astonia;
+
+  src: url('../src/fonts/Astonia.ttf') format("truetype");
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+  font-family: yekanBakh-Regular;
+  user-select: none;
+  overflow-x:hidden;
+}
+a {
+  cursor: pointer;
+}
+header ul li.active::after,header ul li.active{
+  opacity: 100%;
+}
+header ul li.active::after{
+  bottom: -12px;
+}
+.shadow-1{
+  box-shadow: 0px 0px 35.20000076293945px 0px #0000000D;
+}
+.shadow-2{
+  box-shadow: 0px 0px 200px 0px #00000026;
+}
+.shadow-3{
+  box-shadow: 0px 0px 155.17242431640625px 0px #00000026;
+}
+.shadow-next{
+  box-shadow: -2px 0px 24px 0px #0000001A;
+}
+.bg-blur{
+  background-color: rgba(255, 255, 255, 0.91);
+  backdrop-filter: blur(4px);
+}
+#hamIcon.active svg:last-child{
+  display: block;
+}
+#hamIcon.active svg:first-child{
+  display: none;
+}
+.mobileMenu{
+  box-shadow: 0px 0px 162px 0px #00000026;
+  display: none;
+}
+.mobileMenu.active{
+  display: block;
+}
+.dropdownBtn .arrowSvg.active,.dropdownBtn2 .arrowSvg.active {
+  transform: rotate(0);
+}
+.dropdownContent,.dropdownContent2,.accordionContent {
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all .4s;
+}
+.dropdownContent.active,.dropdownContent2.active {
+  max-height: 2000px;
+  margin-top: 18px;
+  overflow: hidden;
+}
+.accordionContent.active,.accordionContent2.active{
+  max-height: 2000px;
+}
+.dropdownContent2.active{
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.arrowShape.active{
+  opacity: 100%;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.dropdown.actie{
+  display: grid!important;
+}
+/* swiper */
+
+.swiper-pagination-bullet-active {
+  background: #F6AB36!important;
+  width: 21px!important;
+  border-radius: 37px;
+  height: 5px;
+}
+.swiper-pagination-bullet{
+  background-color: #0000003B;
+  width: 5px;
+  height: 5px;
+  border-radius: 37px;
+  opacity: 100%;
+  transition: all .4s;
+}
