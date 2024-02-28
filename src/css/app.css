@@ -54,6 +54,12 @@ header ul li.active::after{
 .shadow-3{
   box-shadow: 0px 0px 155.17242431640625px 0px #00000026;
 }
+.shadow-4{
+  box-shadow: 0px 0px 82.42106628417969px 0px #0000001C;
+}
+.shadow-5{
+  box-shadow: -9.741082191467285px 7.653707504272461px 55.663326263427734px 0px #F6AB36B2;
+}
 .shadow-next{
   box-shadow: -2px 0px 24px 0px #0000001A;
 }
