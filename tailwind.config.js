@@ -7,7 +7,8 @@ module.exports = {
         'purple':'#643394',
         'pink':'#FFE6E2',
         'gold':'#F6AB36',
-        'gray':'#F0F2F5'
+        'gray':'#F0F2F5',
+        'gray2':'#EEEEEE'
       },
       zIndex: {
         1: "1",
