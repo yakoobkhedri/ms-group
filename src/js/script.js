@@ -73,6 +73,10 @@ var services = new Swiper(".services", {
       slidesPerView: 3,
     }
   },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
   navigation: {
     nextEl: ".swiper-button-next2",
     prevEl: ".swiper-button-prev2",
@@ -94,8 +98,8 @@ var customer = new Swiper(".customer", {
     }
   },
   navigation: {
-    nextEl: ".swiper-button-next2",
-    prevEl: ".swiper-button-prev2",
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
   pagination: {
     el: ".swiper-pagination",
