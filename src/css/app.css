@@ -131,7 +131,7 @@ input[type="number"] {
 }
 /* hover */
 .btnHover:hover {
-  transform: scaleX(1.02);
+  transform: scaleX(1.01);
 }
 .btnHover{
   position: relative;
