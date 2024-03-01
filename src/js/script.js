@@ -78,3 +78,27 @@ var services = new Swiper(".services", {
     prevEl: ".swiper-button-prev2",
   },
 });
+var customer = new Swiper(".customer", {
+  slidesPerView: 1.3,
+  spaceBetween: 38,
+  autoplay: true,
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
+    }
+  },
+  navigation: {
+    nextEl: ".swiper-button-next2",
+    prevEl: ".swiper-button-prev2",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
