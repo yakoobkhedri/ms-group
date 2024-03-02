@@ -62,7 +62,7 @@ var banner = new Swiper(".banner", {
   },
 });
 var services = new Swiper(".services", {
-  slidesPerView: 1.3,
+  slidesPerView: 1.6,
   spaceBetween: 38,
   autoplay: true,
   breakpoints: {
