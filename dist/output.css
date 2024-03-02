@@ -1223,6 +1223,10 @@ video {
   height: 266px;
 }
 
+.h-6 {
+  height: 1.5rem;
+}
+
 .w-0 {
   width: 0px;
 }
@@ -2621,6 +2625,14 @@ input[type="number"] {
 }
 
 @media (min-width: 768px) {
+  .md\:col-span-4 {
+    grid-column: span 4 / span 4;
+  }
+
+  .md\:col-span-8 {
+    grid-column: span 8 / span 8;
+  }
+
   .md\:block {
     display: block;
   }
@@ -2687,6 +2699,18 @@ input[type="number"] {
     display: none;
   }
 
+  .lg\:h-11 {
+    height: 2.75rem;
+  }
+
+  .lg\:w-11 {
+    width: 2.75rem;
+  }
+
+  .lg\:gap-6 {
+    gap: 1.5rem;
+  }
+
   .lg\:bg-purple {
     --tw-bg-opacity: 1;
     background-color: rgb(100 51 148 / var(--tw-bg-opacity));
@@ -2715,6 +2739,16 @@ input[type="number"] {
 
   .lg\:pt-0 {
     padding-top: 0px;
+  }
+
+  .lg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .lg\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 
   .lg\:text-black {
