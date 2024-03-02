@@ -1227,6 +1227,14 @@ video {
   height: 1.5rem;
 }
 
+.h-\[06px\] {
+  height: 06px;
+}
+
+.h-\[106px\] {
+  height: 106px;
+}
+
 .w-0 {
   width: 0px;
 }
@@ -1335,6 +1343,10 @@ video {
   width: 171px;
 }
 
+.w-32 {
+  width: 8rem;
+}
+
 .max-w-\[1536px\] {
   max-width: 1536px;
 }
@@ -1416,6 +1428,10 @@ video {
 
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.flex-row {
+  flex-direction: row;
 }
 
 .flex-col {
@@ -2019,6 +2035,10 @@ video {
   line-height: 2.25rem;
 }
 
+.text-\[10px\] {
+  font-size: 10px;
+}
+
 .font-black {
   font-weight: 900;
 }
@@ -2619,18 +2639,36 @@ input[type="number"] {
     line-height: 1.25rem;
   }
 
+  .sm\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
   .sm\:leading-\[90px\] {
     line-height: 90px;
   }
 }
 
 @media (min-width: 768px) {
+  .md\:order-first {
+    order: -9999;
+  }
+
+  .md\:order-last {
+    order: 9999;
+  }
+
   .md\:col-span-4 {
     grid-column: span 4 / span 4;
   }
 
   .md\:col-span-8 {
     grid-column: span 8 / span 8;
+  }
+
+  .md\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .md\:block {
@@ -2645,8 +2683,20 @@ input[type="number"] {
     height: 354px;
   }
 
+  .md\:h-\[142px\] {
+    height: 142px;
+  }
+
+  .md\:w-auto {
+    width: auto;
+  }
+
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:flex-col {
+    flex-direction: column;
   }
 
   .md\:justify-start {
@@ -2655,6 +2705,10 @@ input[type="number"] {
 
   .md\:gap-14 {
     gap: 3.5rem;
+  }
+
+  .md\:gap-0 {
+    gap: 0px;
   }
 
   .md\:p-5 {
