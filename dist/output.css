@@ -1315,6 +1315,10 @@ video {
   width: 100%;
 }
 
+.w-\[482px\] {
+  width: 482px;
+}
+
 .max-w-\[1536px\] {
   max-width: 1536px;
 }
@@ -1500,6 +1504,26 @@ video {
 
 .gap-\[52px\] {
   gap: 52px;
+}
+
+.gap-20 {
+  gap: 5rem;
+}
+
+.gap-y-28 {
+  row-gap: 7rem;
+}
+
+.gap-y-32 {
+  row-gap: 8rem;
+}
+
+.gap-y-36 {
+  row-gap: 9rem;
+}
+
+.gap-y-40 {
+  row-gap: 10rem;
 }
 
 .overflow-auto {
@@ -1981,6 +2005,10 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-\[13px\] {
+  font-size: 13px;
 }
 
 .font-black {
@@ -2532,6 +2560,18 @@ input[type="number"] {
     margin-top: 52px;
   }
 
+  .sm\:mb-10 {
+    margin-bottom: 2.5rem;
+  }
+
+  .sm\:block {
+    display: block;
+  }
+
+  .sm\:hidden {
+    display: none;
+  }
+
   .sm\:h-\[52px\] {
     height: 52px;
   }
@@ -2554,6 +2594,10 @@ input[type="number"] {
 
   .sm\:flex-row {
     flex-direction: row;
+  }
+
+  .sm\:gap-5 {
+    gap: 1.25rem;
   }
 
   .sm\:p-10 {
@@ -2601,8 +2645,17 @@ input[type="number"] {
     line-height: 1rem;
   }
 
+  .sm\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
   .sm\:leading-\[90px\] {
     line-height: 90px;
+  }
+
+  .sm\:leading-8 {
+    line-height: 2rem;
   }
 }
 
@@ -2728,6 +2781,14 @@ input[type="number"] {
 
   .lg\:gap-6 {
     gap: 1.5rem;
+  }
+
+  .lg\:gap-9 {
+    gap: 2.25rem;
+  }
+
+  .lg\:gap-y-9 {
+    row-gap: 2.25rem;
   }
 
   .lg\:bg-transparent {
