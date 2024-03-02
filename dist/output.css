@@ -1199,6 +1199,10 @@ video {
   height: 100%;
 }
 
+.h-\[304px\] {
+  height: 304px;
+}
+
 .w-0 {
   width: 0px;
 }
@@ -1816,6 +1820,11 @@ video {
 .py-\[21px\] {
   padding-top: 21px;
   padding-bottom: 21px;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .pb-0 {
@@ -2531,6 +2540,10 @@ input[type="number"] {
     height: auto;
   }
 
+  .sm\:h-\[350px\] {
+    height: 350px;
+  }
+
   .sm\:w-\[216px\] {
     width: 216px;
   }
@@ -2545,6 +2558,11 @@ input[type="number"] {
 
   .sm\:p-10 {
     padding: 2.5rem;
+  }
+
+  .sm\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
   }
 
   .sm\:pl-5 {
