@@ -826,6 +826,14 @@ video {
   top: 143px;
 }
 
+.-left-\[52px\] {
+  left: -52px;
+}
+
+.bottom-5 {
+  bottom: 1.25rem;
+}
+
 .-z-0 {
   z-index: 0;
 }
@@ -1305,6 +1313,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-5 {
+  width: 1.25rem;
 }
 
 .max-w-\[1536px\] {
@@ -1970,6 +1982,10 @@ video {
   line-height: 1rem;
 }
 
+.text-\[8px\] {
+  font-size: 8px;
+}
+
 .font-black {
   font-weight: 900;
 }
@@ -2510,6 +2526,14 @@ input[type="number"] {
     top: -67px;
   }
 
+  .sm\:bottom-7 {
+    bottom: 1.75rem;
+  }
+
+  .sm\:right-7 {
+    right: 1.75rem;
+  }
+
   .sm\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
@@ -2521,6 +2545,10 @@ input[type="number"] {
 
   .sm\:mt-\[52px\] {
     margin-top: 52px;
+  }
+
+  .sm\:mt-6 {
+    margin-top: 1.5rem;
   }
 
   .sm\:block {
@@ -2559,6 +2587,10 @@ input[type="number"] {
     gap: 1.25rem;
   }
 
+  .sm\:p-6 {
+    padding: 1.5rem;
+  }
+
   .sm\:text-right {
     text-align: right;
   }
@@ -2594,6 +2626,11 @@ input[type="number"] {
   .sm\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
+  }
+
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .sm\:leading-8 {
