@@ -874,10 +874,6 @@ video {
   grid-column: span 12 / span 12;
 }
 
-.col-span-3 {
-  grid-column: span 3 / span 3;
-}
-
 .col-span-4 {
   grid-column: span 4 / span 4;
 }
@@ -894,10 +890,6 @@ video {
   grid-column: span 8 / span 8;
 }
 
-.col-span-9 {
-  grid-column: span 9 / span 9;
-}
-
 .m-auto {
   margin: auto;
 }
@@ -905,10 +897,6 @@ video {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
-}
-
-.-mb-32 {
-  margin-bottom: -8rem;
 }
 
 .-mr-2 {
@@ -1135,10 +1123,6 @@ video {
   height: 106px;
 }
 
-.h-\[108px\] {
-  height: 108px;
-}
-
 .h-\[144px\] {
   height: 144px;
 }
@@ -1187,6 +1171,10 @@ video {
   height: 582px;
 }
 
+.h-\[76px\] {
+  height: 76px;
+}
+
 .h-\[90px\] {
   height: 90px;
 }
@@ -1195,12 +1183,8 @@ video {
   height: 100%;
 }
 
-.h-\[87px\] {
-  height: 87px;
-}
-
-.h-\[76px\] {
-  height: 76px;
+.h-8 {
+  height: 2rem;
 }
 
 .w-0 {
@@ -1339,6 +1323,10 @@ video {
   width: 100%;
 }
 
+.w-20 {
+  width: 5rem;
+}
+
 .max-w-\[1536px\] {
   max-width: 1536px;
 }
@@ -1418,10 +1406,6 @@ video {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
 .flex-row {
   flex-direction: row;
 }
@@ -1452,10 +1436,6 @@ video {
 
 .justify-between {
   justify-content: space-between;
-}
-
-.gap-0 {
-  gap: 0px;
 }
 
 .gap-1 {
@@ -1522,12 +1502,12 @@ video {
   gap: 52px;
 }
 
-.gap-y-40 {
-  row-gap: 10rem;
-}
-
 .gap-y-12 {
   row-gap: 3rem;
+}
+
+.gap-y-40 {
+  row-gap: 10rem;
 }
 
 .overflow-auto {
@@ -1540,6 +1520,10 @@ video {
 
 .overflow-visible {
   overflow: visible;
+}
+
+.rounded-2xl {
+  border-radius: 1rem;
 }
 
 .rounded-3xl {
@@ -1582,10 +1566,6 @@ video {
   border-radius: 9999px;
 }
 
-.rounded-2xl {
-  border-radius: 1rem;
-}
-
 .rounded-b-\[20px\] {
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -1611,16 +1591,16 @@ video {
   border-top-right-radius: 64px;
 }
 
+.rounded-tl-\[35px\] {
+  border-top-left-radius: 35px;
+}
+
 .rounded-tl-\[60px\] {
   border-top-left-radius: 60px;
 }
 
 .rounded-tl-none {
   border-top-left-radius: 0px;
-}
-
-.rounded-tl-\[35px\] {
-  border-top-left-radius: 35px;
 }
 
 .border-b {
@@ -1887,6 +1867,10 @@ video {
   padding-left: 1rem;
 }
 
+.pr-12 {
+  padding-right: 3rem;
+}
+
 .pr-16 {
   padding-right: 4rem;
 }
@@ -1915,10 +1899,6 @@ video {
   padding-top: 4rem;
 }
 
-.pt-32 {
-  padding-top: 8rem;
-}
-
 .pt-5 {
   padding-top: 1.25rem;
 }
@@ -1929,10 +1909,6 @@ video {
 
 .pt-8 {
   padding-top: 2rem;
-}
-
-.pr-12 {
-  padding-right: 3rem;
 }
 
 .text-center {
@@ -2612,6 +2588,14 @@ input[type="number"] {
     height: auto;
   }
 
+  .sm\:h-9 {
+    height: 2.25rem;
+  }
+
+  .sm\:h-11 {
+    height: 2.75rem;
+  }
+
   .sm\:w-\[216px\] {
     width: 216px;
   }
@@ -2626,6 +2610,14 @@ input[type="number"] {
 
   .sm\:w-auto {
     width: auto;
+  }
+
+  .sm\:w-\[91px\] {
+    width: 91px;
+  }
+
+  .sm\:w-11 {
+    width: 2.75rem;
   }
 
   .sm\:flex-row {
@@ -2795,6 +2787,11 @@ input[type="number"] {
     gap: 4rem;
   }
 
+  .md\:bg-gray2 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(238 238 238 / var(--tw-bg-opacity));
+  }
+
   .md\:p-10 {
     padding: 2.5rem;
   }
@@ -2825,16 +2822,16 @@ input[type="number"] {
     order: 9999;
   }
 
+  .lg\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
   .lg\:col-span-5 {
     grid-column: span 5 / span 5;
   }
 
   .lg\:col-span-7 {
     grid-column: span 7 / span 7;
-  }
-
-  .lg\:col-span-3 {
-    grid-column: span 3 / span 3;
   }
 
   .lg\:col-span-9 {
@@ -2846,12 +2843,12 @@ input[type="number"] {
     margin-right: auto;
   }
 
-  .lg\:mt-0 {
-    margin-top: 0px;
-  }
-
   .lg\:-mb-32 {
     margin-bottom: -8rem;
+  }
+
+  .lg\:mt-0 {
+    margin-top: 0px;
   }
 
   .lg\:block {
@@ -2870,16 +2867,16 @@ input[type="number"] {
     height: 2.75rem;
   }
 
+  .lg\:h-\[108px\] {
+    height: 108px;
+  }
+
   .lg\:h-\[416px\] {
     height: 416px;
   }
 
   .lg\:h-\[478px\] {
     height: 478px;
-  }
-
-  .lg\:h-\[108px\] {
-    height: 108px;
   }
 
   .lg\:w-11 {
@@ -2906,6 +2903,10 @@ input[type="number"] {
     flex-direction: column;
   }
 
+  .lg\:gap-0 {
+    gap: 0px;
+  }
+
   .lg\:gap-5 {
     gap: 1.25rem;
   }
@@ -2922,16 +2923,12 @@ input[type="number"] {
     gap: 52px;
   }
 
-  .lg\:gap-0 {
-    gap: 0px;
+  .lg\:gap-y-0 {
+    row-gap: 0px;
   }
 
   .lg\:gap-y-9 {
     row-gap: 2.25rem;
-  }
-
-  .lg\:gap-y-0 {
-    row-gap: 0px;
   }
 
   .lg\:rounded-\[30px\] {
@@ -2994,6 +2991,10 @@ input[type="number"] {
     padding-left: 5rem;
   }
 
+  .lg\:pr-16 {
+    padding-right: 4rem;
+  }
+
   .lg\:pt-0 {
     padding-top: 0px;
   }
@@ -3004,10 +3005,6 @@ input[type="number"] {
 
   .lg\:pt-32 {
     padding-top: 8rem;
-  }
-
-  .lg\:pr-16 {
-    padding-right: 4rem;
   }
 
   .lg\:text-right {
