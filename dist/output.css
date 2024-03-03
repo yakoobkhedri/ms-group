@@ -1335,6 +1335,10 @@ video {
   width: 84%;
 }
 
+.w-\[89\%\] {
+  width: 89%;
+}
+
 .max-w-\[1536px\] {
   max-width: 1536px;
 }
@@ -2723,6 +2727,10 @@ input[type="number"] {
     grid-column: span 7 / span 7;
   }
 
+  .md\:col-span-6 {
+    grid-column: span 6 / span 6;
+  }
+
   .md\:mx-auto {
     margin-left: auto;
     margin-right: auto;
@@ -2842,6 +2850,10 @@ input[type="number"] {
     width: 1.5rem;
   }
 
+  .lg\:w-auto {
+    width: auto;
+  }
+
   .lg\:flex-row {
     flex-direction: row;
   }
@@ -2856,6 +2868,10 @@ input[type="number"] {
 
   .lg\:gap-9 {
     gap: 2.25rem;
+  }
+
+  .lg\:gap-\[52px\] {
+    gap: 52px;
   }
 
   .lg\:gap-y-9 {
@@ -2939,6 +2955,11 @@ input[type="number"] {
   .lg\:text-black {
     --tw-text-opacity: 1;
     color: rgb(0 0 0 / var(--tw-text-opacity));
+  }
+
+  .lg\:text-\[\#1E2D48\] {
+    --tw-text-opacity: 1;
+    color: rgb(30 45 72 / var(--tw-text-opacity));
   }
 }
 
