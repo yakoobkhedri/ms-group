@@ -1111,6 +1111,10 @@ video {
   height: 1.75rem;
 }
 
+.h-8 {
+  height: 2rem;
+}
+
 .h-9 {
   height: 2.25rem;
 }
@@ -1139,6 +1143,10 @@ video {
   height: 244px;
 }
 
+.h-\[264px\] {
+  height: 264px;
+}
+
 .h-\[266px\] {
   height: 266px;
 }
@@ -1149,10 +1157,6 @@ video {
 
 .h-\[315px\] {
   height: 315px;
-}
-
-.h-\[319px\] {
-  height: 319px;
 }
 
 .h-\[347px\] {
@@ -1181,10 +1185,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-8 {
-  height: 2rem;
 }
 
 .w-0 {
@@ -1217,6 +1217,10 @@ video {
 
 .w-16 {
   width: 4rem;
+}
+
+.w-20 {
+  width: 5rem;
 }
 
 .w-32 {
@@ -1259,12 +1263,12 @@ video {
   width: 18px;
 }
 
-.w-\[302px\] {
-  width: 302px;
+.w-\[272px\] {
+  width: 272px;
 }
 
-.w-\[328px\] {
-  width: 328px;
+.w-\[302px\] {
+  width: 302px;
 }
 
 .w-\[338px\] {
@@ -1307,10 +1311,6 @@ video {
   width: 91%;
 }
 
-.w-\[91px\] {
-  width: 91px;
-}
-
 .w-\[93\%\] {
   width: 93%;
 }
@@ -1321,10 +1321,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-20 {
-  width: 5rem;
 }
 
 .max-w-\[1536px\] {
@@ -1502,6 +1498,10 @@ video {
   gap: 52px;
 }
 
+.gap-9 {
+  gap: 2.25rem;
+}
+
 .gap-y-12 {
   row-gap: 3rem;
 }
@@ -1669,11 +1669,6 @@ video {
 .bg-gray {
   --tw-bg-opacity: 1;
   background-color: rgb(240 242 245 / var(--tw-bg-opacity));
-}
-
-.bg-gray2 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(238 238 238 / var(--tw-bg-opacity));
 }
 
 .bg-pink {
@@ -2041,6 +2036,10 @@ video {
 
 .leading-\[51px\] {
   line-height: 51px;
+}
+
+.leading-7 {
+  line-height: 1.75rem;
 }
 
 .text-\[\#1E2D48\] {
@@ -2572,8 +2571,20 @@ input[type="number"] {
     display: none;
   }
 
+  .sm\:h-11 {
+    height: 2.75rem;
+  }
+
+  .sm\:h-9 {
+    height: 2.25rem;
+  }
+
   .sm\:h-\[200px\] {
     height: 200px;
+  }
+
+  .sm\:h-\[319px\] {
+    height: 319px;
   }
 
   .sm\:h-\[350px\] {
@@ -2588,16 +2599,16 @@ input[type="number"] {
     height: auto;
   }
 
-  .sm\:h-9 {
-    height: 2.25rem;
-  }
-
-  .sm\:h-11 {
-    height: 2.75rem;
+  .sm\:w-11 {
+    width: 2.75rem;
   }
 
   .sm\:w-\[216px\] {
     width: 216px;
+  }
+
+  .sm\:w-\[328px\] {
+    width: 328px;
   }
 
   .sm\:w-\[82\%\] {
@@ -2608,16 +2619,12 @@ input[type="number"] {
     width: 89%;
   }
 
-  .sm\:w-auto {
-    width: auto;
-  }
-
   .sm\:w-\[91px\] {
     width: 91px;
   }
 
-  .sm\:w-11 {
-    width: 2.75rem;
+  .sm\:w-auto {
+    width: auto;
   }
 
   .sm\:flex-row {
@@ -2636,8 +2643,16 @@ input[type="number"] {
     gap: 2rem;
   }
 
+  .sm\:gap-12 {
+    gap: 3rem;
+  }
+
   .sm\:p-6 {
     padding: 1.5rem;
+  }
+
+  .sm\:p-11 {
+    padding: 2.75rem;
   }
 
   .sm\:px-9 {
