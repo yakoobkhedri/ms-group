@@ -842,6 +842,10 @@ video {
   top: -540px;
 }
 
+.-top-80 {
+  top: -20rem;
+}
+
 .-z-0 {
   z-index: 0;
 }
@@ -913,6 +917,11 @@ video {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.mx-0 {
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .-mr-2 {
@@ -1203,6 +1212,14 @@ video {
   height: 100%;
 }
 
+.h-\[109px\] {
+  height: 109px;
+}
+
+.h-\[86px\] {
+  height: 86px;
+}
+
 .w-0 {
   width: 0px;
 }
@@ -1341,6 +1358,10 @@ video {
 
 .w-52 {
   width: 13rem;
+}
+
+.w-auto {
+  width: auto;
 }
 
 .max-w-\[1536px\] {
@@ -1580,6 +1601,10 @@ video {
 
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded-\[17px\] {
+  border-radius: 17px;
 }
 
 .rounded-b-\[20px\] {
@@ -1838,6 +1863,16 @@ video {
   padding-bottom: 21px;
 }
 
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -1920,6 +1955,10 @@ video {
 
 .pb-12 {
   padding-bottom: 3rem;
+}
+
+.pr-14 {
+  padding-right: 3.5rem;
 }
 
 .text-center {
@@ -2693,6 +2732,10 @@ input[type="number"] {
     padding-bottom: 71px;
   }
 
+  .sm\:pb-10 {
+    padding-bottom: 2.5rem;
+  }
+
   .sm\:text-right {
     text-align: right;
   }
@@ -2802,6 +2845,10 @@ input[type="number"] {
     width: auto;
   }
 
+  .md\:w-full {
+    width: 100%;
+  }
+
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -2843,12 +2890,30 @@ input[type="number"] {
     padding: 1.25rem;
   }
 
+  .md\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
   .md\:pl-4 {
     padding-left: 1rem;
   }
 
   .md\:pl-5 {
     padding-left: 1.25rem;
+  }
+
+  .md\:pr-20 {
+    padding-right: 5rem;
+  }
+
+  .md\:pl-10 {
+    padding-left: 2.5rem;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
@@ -2879,6 +2944,14 @@ input[type="number"] {
 
   .lg\:col-span-9 {
     grid-column: span 9 / span 9;
+  }
+
+  .lg\:col-span-4 {
+    grid-column: span 4 / span 4;
+  }
+
+  .lg\:col-span-8 {
+    grid-column: span 8 / span 8;
   }
 
   .lg\:mx-auto {
@@ -2920,6 +2993,10 @@ input[type="number"] {
 
   .lg\:h-\[478px\] {
     height: 478px;
+  }
+
+  .lg\:h-\[167px\] {
+    height: 167px;
   }
 
   .lg\:w-11 {
@@ -2964,6 +3041,10 @@ input[type="number"] {
 
   .lg\:gap-\[52px\] {
     gap: 52px;
+  }
+
+  .lg\:gap-16 {
+    gap: 4rem;
   }
 
   .lg\:gap-y-0 {
@@ -3022,6 +3103,11 @@ input[type="number"] {
     padding-bottom: 104px;
   }
 
+  .lg\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
   .lg\:pb-0 {
     padding-bottom: 0px;
   }
@@ -3048,6 +3134,14 @@ input[type="number"] {
 
   .lg\:pt-32 {
     padding-top: 8rem;
+  }
+
+  .lg\:pr-20 {
+    padding-right: 5rem;
+  }
+
+  .lg\:pl-10 {
+    padding-left: 2.5rem;
   }
 
   .lg\:text-right {
