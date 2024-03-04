@@ -84,7 +84,7 @@ var services = new Swiper(".services", {
   },
 });
 var customer = new Swiper(".customer", {
-  slidesPerView: 1.3,
+  slidesPerView: 1,
   spaceBetween: 38,
   autoplay: true,
   breakpoints: {

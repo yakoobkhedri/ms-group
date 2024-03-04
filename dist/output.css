@@ -826,6 +826,22 @@ video {
   top: 143px;
 }
 
+.-top-\[400px\] {
+  top: -400px;
+}
+
+.-top-\[500px\] {
+  top: -500px;
+}
+
+.-top-\[550px\] {
+  top: -550px;
+}
+
+.-top-\[540px\] {
+  top: -540px;
+}
+
 .-z-0 {
   z-index: 0;
 }
@@ -1323,6 +1339,10 @@ video {
   width: 100%;
 }
 
+.w-52 {
+  width: 13rem;
+}
+
 .max-w-\[1536px\] {
   max-width: 1536px;
 }
@@ -1442,10 +1462,6 @@ video {
   gap: 2.5rem;
 }
 
-.gap-12 {
-  gap: 3rem;
-}
-
 .gap-16 {
   gap: 4rem;
 }
@@ -1486,6 +1502,10 @@ video {
   gap: 2rem;
 }
 
+.gap-9 {
+  gap: 2.25rem;
+}
+
 .gap-\[10px\] {
   gap: 10px;
 }
@@ -1496,10 +1516,6 @@ video {
 
 .gap-\[52px\] {
   gap: 52px;
-}
-
-.gap-9 {
-  gap: 2.25rem;
 }
 
 .gap-y-12 {
@@ -1692,10 +1708,6 @@ video {
 
 .p-1 {
   padding: 0.25rem;
-}
-
-.p-11 {
-  padding: 2.75rem;
 }
 
 .p-2 {
@@ -1906,6 +1918,10 @@ video {
   padding-top: 2rem;
 }
 
+.pb-12 {
+  padding-bottom: 3rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -2026,6 +2042,10 @@ video {
   line-height: 1.5rem;
 }
 
+.leading-7 {
+  line-height: 1.75rem;
+}
+
 .leading-8 {
   line-height: 2rem;
 }
@@ -2036,10 +2056,6 @@ video {
 
 .leading-\[51px\] {
   line-height: 51px;
-}
-
-.leading-7 {
-  line-height: 1.75rem;
 }
 
 .text-\[\#1E2D48\] {
@@ -2627,8 +2643,16 @@ input[type="number"] {
     width: auto;
   }
 
+  .sm\:w-\[338px\] {
+    width: 338px;
+  }
+
   .sm\:flex-row {
     flex-direction: row;
+  }
+
+  .sm\:gap-12 {
+    gap: 3rem;
   }
 
   .sm\:gap-5 {
@@ -2643,16 +2667,16 @@ input[type="number"] {
     gap: 2rem;
   }
 
-  .sm\:gap-12 {
-    gap: 3rem;
+  .sm\:p-11 {
+    padding: 2.75rem;
   }
 
   .sm\:p-6 {
     padding: 1.5rem;
   }
 
-  .sm\:p-11 {
-    padding: 2.75rem;
+  .sm\:p-7 {
+    padding: 1.75rem;
   }
 
   .sm\:px-9 {
@@ -2663,6 +2687,10 @@ input[type="number"] {
   .sm\:py-4 {
     padding-top: 1rem;
     padding-bottom: 1rem;
+  }
+
+  .sm\:pb-\[71px\] {
+    padding-bottom: 71px;
   }
 
   .sm\:text-right {
@@ -3048,6 +3076,10 @@ input[type="number"] {
 }
 
 @media (min-width: 1280px) {
+  .xl\:block {
+    display: block;
+  }
+
   .xl\:gap-10 {
     gap: 2.5rem;
   }
