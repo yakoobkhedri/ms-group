@@ -1036,6 +1036,10 @@ video {
   margin-top: 74px;
 }
 
+.mb-28 {
+  margin-bottom: 7rem;
+}
+
 .block {
   display: block;
 }
@@ -1248,6 +1252,10 @@ video {
   width: 13rem;
 }
 
+.w-56 {
+  width: 14rem;
+}
+
 .w-6 {
   width: 1.5rem;
 }
@@ -1332,10 +1340,6 @@ video {
   width: 100%;
 }
 
-.w-56 {
-  width: 14rem;
-}
-
 .max-w-\[1536px\] {
   max-width: 1536px;
 }
@@ -1413,6 +1417,10 @@ video {
 
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -1513,6 +1521,10 @@ video {
 
 .gap-y-40 {
   row-gap: 10rem;
+}
+
+.gap-y-7 {
+  row-gap: 1.75rem;
 }
 
 .overflow-auto {
@@ -1834,6 +1846,11 @@ video {
 .py-\[21px\] {
   padding-top: 21px;
   padding-bottom: 21px;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .pb-0 {
@@ -2517,6 +2534,10 @@ input[type="number"] {
     top: -0.25rem;
   }
 
+  .min-\[450px\]\:mb-28 {
+    margin-bottom: 7rem;
+  }
+
   .min-\[450px\]\:hidden {
     display: none;
   }
@@ -2562,6 +2583,10 @@ input[type="number"] {
 
   .sm\:mt-\[52px\] {
     margin-top: 52px;
+  }
+
+  .sm\:mb-9 {
+    margin-bottom: 2.25rem;
   }
 
   .sm\:block {
@@ -2632,6 +2657,10 @@ input[type="number"] {
     width: auto;
   }
 
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .sm\:flex-row {
     flex-direction: row;
   }
@@ -2650,6 +2679,22 @@ input[type="number"] {
 
   .sm\:gap-8 {
     gap: 2rem;
+  }
+
+  .sm\:gap-\[22px\] {
+    gap: 22px;
+  }
+
+  .sm\:gap-6 {
+    gap: 1.5rem;
+  }
+
+  .sm\:gap-10 {
+    gap: 2.5rem;
+  }
+
+  .sm\:gap-y-10 {
+    row-gap: 2.5rem;
   }
 
   .sm\:p-11 {
@@ -2766,6 +2811,14 @@ input[type="number"] {
     grid-column: span 8 / span 8;
   }
 
+  .md\:col-span-5 {
+    grid-column: span 5 / span 5;
+  }
+
+  .md\:col-span-7 {
+    grid-column: span 7 / span 7;
+  }
+
   .md\:mx-auto {
     margin-left: auto;
     margin-right: auto;
@@ -2835,6 +2888,11 @@ input[type="number"] {
   .md\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .md\:py-11 {
+    padding-top: 2.75rem;
+    padding-bottom: 2.75rem;
   }
 
   .md\:pl-10 {
@@ -2940,6 +2998,10 @@ input[type="number"] {
     width: 1.5rem;
   }
 
+  .lg\:w-96 {
+    width: 24rem;
+  }
+
   .lg\:w-auto {
     width: auto;
   }
@@ -2948,16 +3010,16 @@ input[type="number"] {
     width: 100%;
   }
 
-  .lg\:w-96 {
-    width: 24rem;
-  }
-
   .lg\:flex-row {
     flex-direction: row;
   }
 
   .lg\:flex-col {
     flex-direction: column;
+  }
+
+  .lg\:justify-between {
+    justify-content: space-between;
   }
 
   .lg\:gap-0 {
