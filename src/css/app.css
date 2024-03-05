@@ -89,7 +89,7 @@ header ul li.active::after{
 .dropdownBtn .arrowSvg.active,.dropdownBtn2 .arrowSvg.active {
   transform: rotate(0);
 }
-.dropdownContent,.dropdownContent2,.accordionContent {
+.dropdownContent,.dropdownContent2,.accordionContent,.dropdown {
   padding: 0;
   max-height: 0;
   overflow: hidden;
