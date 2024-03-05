@@ -638,10 +638,6 @@ video {
   left: -5rem;
 }
 
-.-left-\[52px\] {
-  left: -52px;
-}
-
 .-right-1 {
   right: -0.25rem;
 }
@@ -832,6 +828,10 @@ video {
 
 .top-\[143px\] {
   top: 143px;
+}
+
+.-top-\[31px\] {
+  top: -31px;
 }
 
 .-z-0 {
@@ -1060,10 +1060,6 @@ video {
   height: 2.75rem;
 }
 
-.h-12 {
-  height: 3rem;
-}
-
 .h-14 {
   height: 3.5rem;
 }
@@ -1128,6 +1124,10 @@ video {
   height: 144px;
 }
 
+.h-\[14px\] {
+  height: 14px;
+}
+
 .h-\[18px\] {
   height: 18px;
 }
@@ -1182,10 +1182,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-\[14px\] {
-  height: 14px;
 }
 
 .w-0 {
@@ -1256,12 +1252,20 @@ video {
   width: 1.75rem;
 }
 
+.w-9 {
+  width: 2.25rem;
+}
+
 .w-\[111px\] {
   width: 111px;
 }
 
 .w-\[140px\] {
   width: 140px;
+}
+
+.w-\[14px\] {
+  width: 14px;
 }
 
 .w-\[171px\] {
@@ -1330,14 +1334,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-9 {
-  width: 2.25rem;
-}
-
-.w-\[14px\] {
-  width: 14px;
 }
 
 .max-w-\[1536px\] {
@@ -2060,11 +2056,6 @@ video {
   color: #363636B2;
 }
 
-.text-\[\#556076\] {
-  --tw-text-opacity: 1;
-  color: rgb(85 96 118 / var(--tw-text-opacity));
-}
-
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -2078,6 +2069,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-purple {
+  --tw-text-opacity: 1;
+  color: rgb(100 51 148 / var(--tw-text-opacity));
 }
 
 .opacity-40 {
@@ -2227,6 +2223,10 @@ header ul li.active::after{
 
 .shadow-6{
   box-shadow: -11.199999809265137px 8.800000190734863px 64px 0px #643394B2;
+}
+
+.shadow-7{
+  box-shadow: -14px 11px 80px 0px #643394;
 }
 
 .shadow-next{
@@ -2584,6 +2584,10 @@ input[type="number"] {
     height: 2.75rem;
   }
 
+  .sm\:h-12 {
+    height: 3rem;
+  }
+
   .sm\:h-9 {
     height: 2.25rem;
   }
@@ -2608,12 +2612,12 @@ input[type="number"] {
     height: auto;
   }
 
-  .sm\:h-12 {
-    height: 3rem;
-  }
-
   .sm\:w-11 {
     width: 2.75rem;
+  }
+
+  .sm\:w-12 {
+    width: 3rem;
   }
 
   .sm\:w-\[216px\] {
@@ -2642,10 +2646,6 @@ input[type="number"] {
 
   .sm\:w-auto {
     width: auto;
-  }
-
-  .sm\:w-12 {
-    width: 3rem;
   }
 
   .sm\:grid-cols-2 {
