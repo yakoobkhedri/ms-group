@@ -762,6 +762,10 @@ video {
   left: 1.25rem;
 }
 
+.left-6 {
+  left: 1.5rem;
+}
+
 .left-8 {
   left: 2rem;
 }
@@ -814,6 +818,10 @@ video {
   top: 3rem;
 }
 
+.top-14 {
+  top: 3.5rem;
+}
+
 .top-4 {
   top: 1rem;
 }
@@ -826,6 +834,10 @@ video {
   top: 1.5rem;
 }
 
+.top-8 {
+  top: 2rem;
+}
+
 .top-\[100px\] {
   top: 100px;
 }
@@ -836,6 +848,10 @@ video {
 
 .top-\[93px\] {
   top: 93px;
+}
+
+.top-9 {
+  top: 2.25rem;
 }
 
 .-z-0 {
@@ -1032,6 +1048,14 @@ video {
   margin-top: 74px;
 }
 
+.-ml-48 {
+  margin-left: -12rem;
+}
+
+.-ml-\[21rem\] {
+  margin-left: -21rem;
+}
+
 .block {
   display: block;
 }
@@ -1070,6 +1094,10 @@ video {
 
 .h-16 {
   height: 4rem;
+}
+
+.h-2 {
+  height: 0.5rem;
 }
 
 .h-20 {
@@ -1134,6 +1162,10 @@ video {
 
 .h-\[244px\] {
   height: 244px;
+}
+
+.h-\[247px\] {
+  height: 247px;
 }
 
 .h-\[264px\] {
@@ -1330,6 +1362,14 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[87\%\] {
+  width: 87%;
+}
+
+.w-\[96\%\] {
+  width: 96%;
 }
 
 .max-w-\[1536px\] {
@@ -2134,6 +2174,10 @@ video {
   transition-duration: 150ms;
 }
 
+.\[transform\:rotateY\(180deg\)\] {
+  transform: rotateY(180deg);
+}
+
 @font-face {
   font-family: yekanBakh-Regular;
 
@@ -2214,6 +2258,14 @@ header ul li.active::after{
 
 .shadow-7{
   box-shadow: -14px 11px 80px 0px #643394;
+}
+
+.shadow-8{
+  box-shadow: 0px 0px 348px 126px #00000026;
+}
+
+.shadow-9{
+  filter: drop-shadow(0px 0px 200px 0px #00000026);
 }
 
 .shadow-next{
@@ -2620,6 +2672,10 @@ input[type="number"] {
     width: auto;
   }
 
+  .sm\:w-\[308px\] {
+    width: 308px;
+  }
+
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2965,6 +3021,10 @@ input[type="number"] {
     width: 24rem;
   }
 
+  .lg\:w-\[328px\] {
+    width: 328px;
+  }
+
   .lg\:w-auto {
     width: auto;
   }
@@ -3007,6 +3067,11 @@ input[type="number"] {
 
   .lg\:gap-\[52px\] {
     gap: 52px;
+  }
+
+  .lg\:gap-x-16 {
+    -moz-column-gap: 4rem;
+         column-gap: 4rem;
   }
 
   .lg\:gap-y-0 {
@@ -3075,10 +3140,6 @@ input[type="number"] {
 
   .lg\:pl-20 {
     padding-left: 5rem;
-  }
-
-  .lg\:pr-16 {
-    padding-right: 4rem;
   }
 
   .lg\:pr-20 {
