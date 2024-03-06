@@ -112,7 +112,7 @@
             <nav class="flex items-center gap-5 justify-between">
                 <div class="flex items-center gap-16">
                     <a href="index.html" class="flex-shrink-0"><img alt="logo" src="../img/Group 2405.png"></a>
-                    <div>
+                    <div class="relative">
                         <ul
                             class="items-center  [&>*]:after:opacity-0 [&>*]:transition-all [&>*]:after:transition-all [&>*]:relative [&>*]:after:mx-auto [&>*]:after:-bottom-5 [&>*]:after:inset-x-0 [&>*]:after:absolute [&>*]:after:w-3 [&>*]:after:h-1 [&>*]:after:bg-purple [&>*]:after:rounded-[21px] hidden lg:flex gap-6 xl:gap-10 text-secondary text-sm xl:text-base">
                             <li class="hover:after:-bottom-3 hover:after:opacity-100 hover:opacity-100 opacity-40 active">
@@ -137,12 +137,12 @@
                             <li class="hover:after:-bottom-3 hover:after:opacity-100 hover:opacity-100 opacity-40"><a>درباره
                                     ما</a></li>
                         </ul>
-                        <div class="hidden dropdown md:block rounded-3xl bg-white mx-3 p-3 z-40 relative active">
+                        <div class="hidden dropdown md:block absolute rounded-3xl bg-white shadow-2 p-3 z-40 top-[6px] inset-x-0 w-full">
                             <!-- list1 -->
-                            <div class="list1 grid grid-cols-5 py-2 text-center text-secondary font-extrabold font-rokh text-sm">
+                            <div class="list1 grid grid-cols-3 py-2 text-center text-secondary font-extrabold font-rokh text-sm">
                                 <a data-id="1" class="cursor-pointer relative">
-                                    <img alt="product" src="../img/entypo_bucket.png" class="block mx-auto mb-4">
-                                    <p>رنگ صنعتی</p>
+                                    <img alt="product" src="../img/Rectangle 42.png" class="block mx-auto mb-4 w-20">
+                                    <p>خدمات 1</p>
                                     <svg class="absolute left-0 ltr:right-0 ltr:left-auto top-0" xmlns="http://www.w3.org/2000/svg" width="1" height="80" viewBox="0 0 1 80" fill="none">
                                         <line opacity="0.2" x1="0.499939" y1="2.18557e-08" x2="0.499935" y2="80" stroke="black"></line>
                                     </svg>
@@ -150,8 +150,8 @@
                                     <img alt="arrow" src="../img/listarrow.png" class="absolute w-6 inset-x-0 mx-auto top-[93px] transition-all">
                                 </a>
                                 <a data-id="2" class="cursor-pointer relative">
-                                    <img alt="product" src="../img/entypo_bucket.png" class="block mx-auto mb-4">
-                                    <p>رنگ ساختمانی</p>
+                                    <img alt="product" src="../img/Rectangle 42.png" class="block mx-auto mb-4 w-20">
+                                    <p>خدمات 2</p>
                                     <svg class="absolute left-0 ltr:right-0 ltr:left-auto top-0" xmlns="http://www.w3.org/2000/svg" width="1" height="80" viewBox="0 0 1 80" fill="none">
                                         <line opacity="0.2" x1="0.499939" y1="2.18557e-08" x2="0.499935" y2="80" stroke="black"></line>
                                     </svg>
@@ -159,38 +159,20 @@
                                     <img alt="arrow" src="../img/listarrow.png" class="absolute w-6 inset-x-0 mx-auto top-[93px] transition-all opacity-0">
                                 </a>
                                 <a data-id="3" class="cursor-pointer relative">
-                                    <img alt="product" src="../img/entypo_bucket.png" class="block mx-auto mb-4">
-                                    <p>رنگ ترافیکی</p>
-                                    <svg class="absolute left-0 ltr:right-0 ltr:left-auto top-0" xmlns="http://www.w3.org/2000/svg" width="1" height="80" viewBox="0 0 1 80" fill="none">
-                                        <line opacity="0.2" x1="0.499939" y1="2.18557e-08" x2="0.499935" y2="80" stroke="black"></line>
-                                    </svg>
-                                    <!-- arrow -->
-                                    <img alt="arrow" src="../img/listarrow.png" class="absolute w-6 inset-x-0 mx-auto top-[93px] transition-all opacity-0">
-                                </a>
-                                <a data-id="4" class="cursor-pointer relative">
-                                    <img alt="product" src="../img/entypo_bucket.png" class="block mx-auto mb-4">
-                                    <p>سایر محصولات</p>
-                                    <svg class="absolute left-0 ltr:right-0 ltr:left-auto top-0" xmlns="http://www.w3.org/2000/svg" width="1" height="80" viewBox="0 0 1 80" fill="none">
-                                        <line opacity="0.2" x1="0.499939" y1="2.18557e-08" x2="0.499935" y2="80" stroke="black"></line>
-                                    </svg>
-                                    <!-- arrow -->
-                                    <img alt="arrow" src="../img/listarrow.png" class="absolute w-6 inset-x-0 mx-auto top-[93px] transition-all opacity-0">
-                                </a>
-                                <a data-id="5" class="cursor-pointer relative">
-                                    <img alt="product" src="../img/entypo_bucket.png" class="block mx-auto mb-4">
-                                    <p>همه رنگ ها</p>
+                                    <img alt="product" src="../img/Rectangle 42.png" class="block mx-auto mb-4 w-20">
+                                    <p>خدمات 3</p>
                                     <!-- arrow -->
                                     <img alt="arrow" src="../img/listarrow.png" class="absolute w-6 inset-x-0 mx-auto top-[93px] transition-all opacity-0">
                                 </a>
                             </div>
                             <!-- list2 -->
-                            <div class="bg-[#FFCEC7] list2 rounded-3xl p-6 mt-8 text-sm text-black font-light">
-                                <ul data-id="1" class="relative grid grid-cols-3 xl:grid-cols-4 gap-x-16 gap-y-4">
+                            <div class="bg-purple list2 rounded-3xl p-6 mt-2 text-sm text-white font-light">
+                                <ul data-id="1" class="relative grid grid-cols-3 gap-6">
                                     <!--  -->
                                     <li>
                                         <a class="flex items-center gap-2">
                                             <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="4" cy="4" r="4" fill="#232340"></circle>
+                                                <circle cx="4" cy="4" r="4" fill="#f6ab36"></circle>
                                             </svg>
                                             <p>لورم ایپسوم</p>
                                         </a>
@@ -198,7 +180,7 @@
                                     <li>
                                         <a class="flex items-center gap-2">
                                             <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="4" cy="4" r="4" fill="#232340"></circle>
+                                                <circle cx="4" cy="4" r="4" fill="#f6ab36"></circle>
                                             </svg>
                                             <p>لورم ایپسوم</p>
                                         </a>
@@ -206,7 +188,7 @@
                                     <li>
                                         <a class="flex items-center gap-2">
                                             <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="4" cy="4" r="4" fill="#232340"></circle>
+                                                <circle cx="4" cy="4" r="4" fill="#f6ab36"></circle>
                                             </svg>
                                             <p>لورم ایپسوم</p>
                                         </a>
@@ -214,7 +196,7 @@
                                     <li>
                                         <a class="flex items-center gap-2">
                                             <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="4" cy="4" r="4" fill="#232340"></circle>
+                                                <circle cx="4" cy="4" r="4" fill="#f6ab36"></circle>
                                             </svg>
                                             <p>لورم ایپسوم</p>
                                         </a>
@@ -222,7 +204,7 @@
                                     <li>
                                         <a class="flex items-center gap-2">
                                             <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="4" cy="4" r="4" fill="#232340"></circle>
+                                                <circle cx="4" cy="4" r="4" fill="#f6ab36"></circle>
                                             </svg>
                                             <p>لورم ایپسوم</p>
                                         </a>
@@ -230,34 +212,18 @@
                                     <li>
                                         <a class="flex items-center gap-2">
                                             <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="4" cy="4" r="4" fill="#232340"></circle>
-                                            </svg>
-                                            <p>لورم ایپسوم</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="flex items-center gap-2">
-                                            <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="4" cy="4" r="4" fill="#232340"></circle>
-                                            </svg>
-                                            <p>لورم ایپسوم</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="flex items-center gap-2">
-                                            <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="4" cy="4" r="4" fill="#232340"></circle>
+                                                <circle cx="4" cy="4" r="4" fill="#f6ab36"></circle>
                                             </svg>
                                             <p>لورم ایپسوم</p>
                                         </a>
                                     </li>
                                 </ul>
-                                <ul data-id="2" class="relative hidden grid-cols-3 xl:grid-cols-4 gap-x-16 gap-y-4">
+                                <ul data-id="2" class="relative hidden grid-cols-3 gap-6">
                                     <!--  -->
                                     <li>
                                         <a class="flex items-center gap-2">
                                             <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="4" cy="4" r="4" fill="#232340"></circle>
+                                                <circle cx="4" cy="4" r="4" fill="#f6ab36"></circle>
                                             </svg>
                                             <p>لورم ایپسوم</p>
                                         </a>
@@ -265,7 +231,7 @@
                                     <li>
                                         <a class="flex items-center gap-2">
                                             <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="4" cy="4" r="4" fill="#232340"></circle>
+                                                <circle cx="4" cy="4" r="4" fill="#f6ab36"></circle>
                                             </svg>
                                             <p>لورم ایپسوم</p>
                                         </a>
@@ -273,7 +239,7 @@
                                     <li>
                                         <a class="flex items-center gap-2">
                                             <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="4" cy="4" r="4" fill="#232340"></circle>
+                                                <circle cx="4" cy="4" r="4" fill="#f6ab36"></circle>
                                             </svg>
                                             <p>لورم ایپسوم</p>
                                         </a>
@@ -281,7 +247,7 @@
                                     <li>
                                         <a class="flex items-center gap-2">
                                             <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="4" cy="4" r="4" fill="#232340"></circle>
+                                                <circle cx="4" cy="4" r="4" fill="#f6ab36"></circle>
                                             </svg>
                                             <p>لورم ایپسوم</p>
                                         </a>
@@ -289,7 +255,7 @@
                                     <li>
                                         <a class="flex items-center gap-2">
                                             <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="4" cy="4" r="4" fill="#232340"></circle>
+                                                <circle cx="4" cy="4" r="4" fill="#f6ab36"></circle>
                                             </svg>
                                             <p>لورم ایپسوم</p>
                                         </a>
@@ -297,34 +263,18 @@
                                     <li>
                                         <a class="flex items-center gap-2">
                                             <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="4" cy="4" r="4" fill="#232340"></circle>
-                                            </svg>
-                                            <p>لورم ایپسوم</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="flex items-center gap-2">
-                                            <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="4" cy="4" r="4" fill="#232340"></circle>
-                                            </svg>
-                                            <p>لورم ایپسوم</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="flex items-center gap-2">
-                                            <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="4" cy="4" r="4" fill="#232340"></circle>
+                                                <circle cx="4" cy="4" r="4" fill="#f6ab36"></circle>
                                             </svg>
                                             <p>لورم ایپسوم</p>
                                         </a>
                                     </li>
                                 </ul>
-                                <ul data-id="3" class="relative hidden grid-cols-3 xl:grid-cols-4 gap-x-16 gap-y-4">
+                                <ul data-id="3" class="relative hidden grid-cols-3 gap-6">
                                     <!--  -->
                                     <li>
                                         <a class="flex items-center gap-2">
                                             <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="4" cy="4" r="4" fill="#232340"></circle>
+                                                <circle cx="4" cy="4" r="4" fill="#f6ab36"></circle>
                                             </svg>
                                             <p>لورم ایپسوم</p>
                                         </a>
@@ -332,7 +282,7 @@
                                     <li>
                                         <a class="flex items-center gap-2">
                                             <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="4" cy="4" r="4" fill="#232340"></circle>
+                                                <circle cx="4" cy="4" r="4" fill="#f6ab36"></circle>
                                             </svg>
                                             <p>لورم ایپسوم</p>
                                         </a>
@@ -340,7 +290,7 @@
                                     <li>
                                         <a class="flex items-center gap-2">
                                             <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="4" cy="4" r="4" fill="#232340"></circle>
+                                                <circle cx="4" cy="4" r="4" fill="#f6ab36"></circle>
                                             </svg>
                                             <p>لورم ایپسوم</p>
                                         </a>
@@ -348,7 +298,7 @@
                                     <li>
                                         <a class="flex items-center gap-2">
                                             <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="4" cy="4" r="4" fill="#232340"></circle>
+                                                <circle cx="4" cy="4" r="4" fill="#f6ab36"></circle>
                                             </svg>
                                             <p>لورم ایپسوم</p>
                                         </a>
@@ -356,7 +306,7 @@
                                     <li>
                                         <a class="flex items-center gap-2">
                                             <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="4" cy="4" r="4" fill="#232340"></circle>
+                                                <circle cx="4" cy="4" r="4" fill="#f6ab36"></circle>
                                             </svg>
                                             <p>لورم ایپسوم</p>
                                         </a>
@@ -364,157 +314,7 @@
                                     <li>
                                         <a class="flex items-center gap-2">
                                             <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="4" cy="4" r="4" fill="#232340"></circle>
-                                            </svg>
-                                            <p>لورم ایپسوم</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="flex items-center gap-2">
-                                            <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="4" cy="4" r="4" fill="#232340"></circle>
-                                            </svg>
-                                            <p>لورم ایپسوم</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="flex items-center gap-2">
-                                            <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="4" cy="4" r="4" fill="#232340"></circle>
-                                            </svg>
-                                            <p>لورم ایپسوم</p>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <ul data-id="4" class="relative hidden grid-cols-3 xl:grid-cols-4 gap-x-16 gap-y-4">
-                                    <!--  -->
-                                    <li>
-                                        <a class="flex items-center gap-2">
-                                            <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="4" cy="4" r="4" fill="#232340"></circle>
-                                            </svg>
-                                            <p>لورم ایپسوم</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="flex items-center gap-2">
-                                            <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="4" cy="4" r="4" fill="#232340"></circle>
-                                            </svg>
-                                            <p>لورم ایپسوم</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="flex items-center gap-2">
-                                            <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="4" cy="4" r="4" fill="#232340"></circle>
-                                            </svg>
-                                            <p>لورم ایپسوم</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="flex items-center gap-2">
-                                            <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="4" cy="4" r="4" fill="#232340"></circle>
-                                            </svg>
-                                            <p>لورم ایپسوم</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="flex items-center gap-2">
-                                            <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="4" cy="4" r="4" fill="#232340"></circle>
-                                            </svg>
-                                            <p>لورم ایپسوم</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="flex items-center gap-2">
-                                            <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="4" cy="4" r="4" fill="#232340"></circle>
-                                            </svg>
-                                            <p>لورم ایپسوم</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="flex items-center gap-2">
-                                            <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="4" cy="4" r="4" fill="#232340"></circle>
-                                            </svg>
-                                            <p>لورم ایپسوم</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="flex items-center gap-2">
-                                            <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="4" cy="4" r="4" fill="#232340"></circle>
-                                            </svg>
-                                            <p>لورم ایپسوم</p>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <ul data-id="5" class="relative hidden grid-cols-3 xl:grid-cols-4 gap-x-16 gap-y-4">
-                                    <!--  -->
-                                    <li>
-                                        <a class="flex items-center gap-2">
-                                            <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="4" cy="4" r="4" fill="#232340"></circle>
-                                            </svg>
-                                            <p>لورم ایپسوم</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="flex items-center gap-2">
-                                            <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="4" cy="4" r="4" fill="#232340"></circle>
-                                            </svg>
-                                            <p>لورم ایپسوم</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="flex items-center gap-2">
-                                            <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="4" cy="4" r="4" fill="#232340"></circle>
-                                            </svg>
-                                            <p>لورم ایپسوم</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="flex items-center gap-2">
-                                            <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="4" cy="4" r="4" fill="#232340"></circle>
-                                            </svg>
-                                            <p>لورم ایپسوم</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="flex items-center gap-2">
-                                            <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="4" cy="4" r="4" fill="#232340"></circle>
-                                            </svg>
-                                            <p>لورم ایپسوم</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="flex items-center gap-2">
-                                            <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="4" cy="4" r="4" fill="#232340"></circle>
-                                            </svg>
-                                            <p>لورم ایپسوم</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="flex items-center gap-2">
-                                            <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="4" cy="4" r="4" fill="#232340"></circle>
-                                            </svg>
-                                            <p>لورم ایپسوم</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="flex items-center gap-2">
-                                            <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="4" cy="4" r="4" fill="#232340"></circle>
+                                                <circle cx="4" cy="4" r="4" fill="#f6ab36"></circle>
                                             </svg>
                                             <p>لورم ایپسوم</p>
                                         </a>

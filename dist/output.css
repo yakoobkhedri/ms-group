@@ -798,6 +798,10 @@ video {
   right: 2rem;
 }
 
+.right-\[13px\] {
+  right: 13px;
+}
+
 .top-0 {
   top: 0px;
 }
@@ -826,12 +830,12 @@ video {
   top: 100px;
 }
 
-.top-\[93px\] {
-  top: 93px;
+.top-\[6px\] {
+  top: 6px;
 }
 
-.right-\[13px\] {
-  right: 13px;
+.top-\[93px\] {
+  top: 93px;
 }
 
 .-z-0 {
@@ -889,11 +893,6 @@ video {
 .mx-0 {
   margin-left: 0px;
   margin-right: 0px;
-}
-
-.mx-3 {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
 }
 
 .mx-auto {
@@ -1416,10 +1415,6 @@ video {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.grid-cols-5 {
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-}
-
 .flex-row {
   flex-direction: row;
 }
@@ -1508,17 +1503,8 @@ video {
   gap: 22px;
 }
 
-.gap-x-16 {
-  -moz-column-gap: 4rem;
-       column-gap: 4rem;
-}
-
 .gap-y-12 {
   row-gap: 3rem;
-}
-
-.gap-y-4 {
-  row-gap: 1rem;
 }
 
 .gap-y-40 {
@@ -1646,11 +1632,6 @@ video {
 
 .bg-\[\#00000094\] {
   background-color: #00000094;
-}
-
-.bg-\[\#FFCEC7\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 206 199 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#FFFFFF94\] {
@@ -2082,6 +2063,10 @@ video {
   opacity: 0;
 }
 
+.opacity-100 {
+  opacity: 1;
+}
+
 .opacity-40 {
   opacity: 0.4;
 }
@@ -2096,10 +2081,6 @@ video {
 
 .opacity-70 {
   opacity: 0.7;
-}
-
-.opacity-100 {
-  opacity: 1;
 }
 
 .shadow {
@@ -2273,10 +2254,11 @@ header ul li.active::after{
   transition: all .4s;
 }
 
-.dropdownContent.active,.dropdownContent2.active {
+.dropdownContent.active,.dropdownContent2.active,.dropdown.active {
   max-height: 2000px;
   margin-top: 18px;
   overflow: hidden;
+  padding: 12px;
 }
 
 .accordionContent.active,.accordionContent2.active{
@@ -2408,10 +2390,6 @@ input[type="number"] {
 
 .group:hover .group-hover\:fill-gold {
   fill: #F6AB36;
-}
-
-.group:hover .group-hover\:opacity-100 {
-  opacity: 1;
 }
 
 :is([dir="ltr"] .ltr\:-left-2) {
@@ -3147,10 +3125,6 @@ input[type="number"] {
 @media (min-width: 1280px) {
   .xl\:block {
     display: block;
-  }
-
-  .xl\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .xl\:gap-10 {

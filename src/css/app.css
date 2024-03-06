@@ -95,10 +95,11 @@ header ul li.active::after{
   overflow: hidden;
   transition: all .4s;
 }
-.dropdownContent.active,.dropdownContent2.active {
+.dropdownContent.active,.dropdownContent2.active,.dropdown.active {
   max-height: 2000px;
   margin-top: 18px;
   overflow: hidden;
+  padding: 12px;
 }
 .accordionContent.active,.accordionContent2.active{
   max-height: 2000px;
