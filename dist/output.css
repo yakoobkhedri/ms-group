@@ -698,6 +698,10 @@ video {
   top: -5rem;
 }
 
+.-top-3 {
+  top: -0.75rem;
+}
+
 .-top-4 {
   top: -1rem;
 }
@@ -896,10 +900,6 @@ video {
 
 .top-\[93px\] {
   top: 93px;
-}
-
-.-top-3 {
-  top: -0.75rem;
 }
 
 .-z-0 {
@@ -1274,6 +1274,10 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-\[442px\] {
+  height: 442px;
 }
 
 .\!w-2 {
