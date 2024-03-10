@@ -125,12 +125,13 @@ var services = new Swiper(".services", {
 });
 var customer = new Swiper(".customer", {
   slidesPerView: 1,
-  spaceBetween: 24,
+  spaceBetween: 38,
+  loop:true,
   autoplay: true,
   breakpoints: {
     768: {
       slidesPerView: 2,
-      spaceBetween: 38,
+      spaceBetween: 24,
     },
     992: {
       slidesPerView: 3,
