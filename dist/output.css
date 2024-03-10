@@ -2595,12 +2595,28 @@ input[type="number"] {
   left: -1.5rem;
 }
 
+:is([dir="ltr"] .ltr\:-left-\[267px\]) {
+  left: -267px;
+}
+
+:is([dir="ltr"] .ltr\:-left-\[26px\]) {
+  left: -26px;
+}
+
 :is([dir="ltr"] .ltr\:-right-2) {
   right: -0.5rem;
 }
 
 :is([dir="ltr"] .ltr\:left-0) {
   left: 0px;
+}
+
+:is([dir="ltr"] .ltr\:left-10) {
+  left: 2.5rem;
+}
+
+:is([dir="ltr"] .ltr\:left-6) {
+  left: 1.5rem;
 }
 
 :is([dir="ltr"] .ltr\:left-auto) {
@@ -2623,20 +2639,16 @@ input[type="number"] {
   right: auto;
 }
 
-:is([dir="ltr"] .ltr\:-left-\[26px\]) {
-  left: -26px;
+:is([dir="ltr"] .ltr\:-left-\[19px\]) {
+  left: -19px;
 }
 
-:is([dir="ltr"] .ltr\:-left-\[267px\]) {
-  left: -267px;
+:is([dir="ltr"] .ltr\:left-1) {
+  left: 0.25rem;
 }
 
-:is([dir="ltr"] .ltr\:left-10) {
-  left: 2.5rem;
-}
-
-:is([dir="ltr"] .ltr\:left-6) {
-  left: 1.5rem;
+:is([dir="ltr"] .ltr\:left-7) {
+  left: 1.75rem;
 }
 
 :is([dir="ltr"] .ltr\:-ml-2) {
@@ -2661,24 +2673,28 @@ input[type="number"] {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-:is([dir="ltr"] .ltr\:rounded-tl-\[20px\]) {
-  border-top-left-radius: 20px;
-}
-
-:is([dir="ltr"] .ltr\:rounded-tr-none) {
-  border-top-right-radius: 0px;
-}
-
 :is([dir="ltr"] .ltr\:rounded-tl-\[17px\]) {
   border-top-left-radius: 17px;
+}
+
+:is([dir="ltr"] .ltr\:rounded-tl-\[20px\]) {
+  border-top-left-radius: 20px;
 }
 
 :is([dir="ltr"] .ltr\:rounded-tr-\[35px\]) {
   border-top-right-radius: 35px;
 }
 
+:is([dir="ltr"] .ltr\:rounded-tr-none) {
+  border-top-right-radius: 0px;
+}
+
 :is([dir="ltr"] .ltr\:pl-0) {
   padding-left: 0px;
+}
+
+:is([dir="ltr"] .ltr\:pl-11) {
+  padding-left: 2.75rem;
 }
 
 :is([dir="ltr"] .ltr\:pl-2) {
@@ -2689,16 +2705,16 @@ input[type="number"] {
   padding-left: 1rem;
 }
 
+:is([dir="ltr"] .ltr\:pl-5) {
+  padding-left: 1.25rem;
+}
+
 :is([dir="ltr"] .ltr\:pr-0) {
   padding-right: 0px;
 }
 
 :is([dir="ltr"] .ltr\:pr-4) {
   padding-right: 1rem;
-}
-
-:is([dir="ltr"] .ltr\:pl-11) {
-  padding-left: 2.75rem;
 }
 
 :is([dir="ltr"] .ltr\:font-Astonia) {
@@ -3180,6 +3196,10 @@ input[type="number"] {
   :is([dir="ltr"] .ltr\:md\:pr-5) {
     padding-right: 1.25rem;
   }
+
+  :is([dir="ltr"] .ltr\:md\:pr-10) {
+    padding-right: 2.5rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -3515,6 +3535,10 @@ input[type="number"] {
   .lg\:text-black {
     --tw-text-opacity: 1;
     color: rgb(0 0 0 / var(--tw-text-opacity));
+  }
+
+  :is([dir="ltr"] .ltr\:lg\:left-0) {
+    left: 0px;
   }
 }
 
