@@ -1,51 +1,19 @@
-
 // menu
-
-// let btn = Array.from(document.querySelectorAll('.viza'));
-// let tabContent = Array.from(document.querySelectorAll('.tabContent > div'));
-// let dropdownBtn =Array.from(document.getElementsByClassName('dropdownBtn'));
-// let dropdownBtn2 =Array.from(document.getElementsByClassName('dropdownBtn2'));
+let dropdownBtn =Array.from(document.getElementsByClassName('dropdownBtn'));
 let hamIcon = document.getElementById('hamIcon');
 
 
-// dropdownBtn.forEach((item)=>{
-//   item.addEventListener('click', function () {
-//     item.querySelector('.arrowSvg').classList.toggle('active');
-//     item.nextElementSibling.classList.toggle('active');
-//   })
-// })
-// dropdownBtn2.forEach((item)=>{
-//   item.addEventListener('click', function () {
-//     item.querySelector('.arrowSvg').classList.toggle('active');
-//     item.nextElementSibling.nextElementSibling.classList.toggle('active');
-//     item.nextElementSibling.classList.toggle('active');
-//   })
-// })
-
-// btn.forEach((item) => {
-//   item.addEventListener('mouseover', function () {
-//     btn.forEach((items) => {items.classList.remove('active')});
-//     item.classList.add('active');
-//     let tabId = item.dataset.id;
-//     tabContent.forEach((content) => {
-//       let contentId = content.dataset.id;
-//       if (tabId === contentId) {
-//         content.classList.add('grid');
-//         content.classList.remove('hidden');
-//       } else {
-//         content.classList.remove('grid');
-//         content.classList.add('hidden');
-//       }
-//     })
-//   })
-// });
+dropdownBtn.forEach((item)=>{
+  item.addEventListener('click', function () {
+    item.querySelector('.arrowSvg').classList.toggle('active');
+    item.nextElementSibling.classList.toggle('active');
+  })
+})
 
 hamIcon.addEventListener('click', function () {
   hamIcon.classList.toggle('active');
   document.querySelector('.mobileMenu').classList.toggle('active');
 })
-
-// menu
 
 let list1 = Array.from(document.querySelectorAll('.list1 > a'));
 let list2 = Array.from(document.querySelectorAll('.list2 > ul'));
@@ -87,6 +55,20 @@ document.addEventListener('mousemove', (event) => {
 
 // swiper
 var banner = new Swiper(".banner", {
+  slidesPerView: 1,
+  spaceBetween: 5,
+  loop:true,
+  autoplay: true,
+  pagination: {
+    el: ".swiper-pagination2",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+var banner2 = new Swiper(".banner2", {
   slidesPerView: 1,
   spaceBetween: 5,
   loop:true,

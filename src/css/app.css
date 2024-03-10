@@ -101,7 +101,12 @@ header ul li.active::after{
   overflow: hidden;
   transition: all .4s;
 }
-.dropdownContent.active,.dropdownContent2.active,.dropdown.active {
+.dropdownContent.active {
+  max-height: 2000px;
+  margin-top: 18px;
+  overflow: hidden;
+}
+.dropdown.active {
   max-height: 2000px;
   margin-top: 18px;
   overflow: hidden;

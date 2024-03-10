@@ -630,8 +630,8 @@ video {
   bottom: -1.5rem;
 }
 
-.-bottom-\[14px\] {
-  bottom: -14px;
+.-bottom-\[29px\] {
+  bottom: -29px;
 }
 
 .-left-14 {
@@ -886,28 +886,16 @@ video {
   top: 100px;
 }
 
+.top-\[125px\] {
+  top: 125px;
+}
+
 .top-\[218px\] {
   top: 218px;
 }
 
 .top-\[6px\] {
   top: 6px;
-}
-
-.top-\[93px\] {
-  top: 93px;
-}
-
-.-bottom-\[29px\] {
-  bottom: -29px;
-}
-
-.top-\[222px\] {
-  top: 222px;
-}
-
-.top-\[125px\] {
-  top: 125px;
 }
 
 .-z-0 {
@@ -1098,10 +1086,6 @@ video {
 
 .mt-\[74px\] {
   margin-top: 74px;
-}
-
-.-mt-11 {
-  margin-top: -2.75rem;
 }
 
 .block {
@@ -1643,10 +1627,6 @@ video {
   gap: 22px;
 }
 
-.gap-\[88px\] {
-  gap: 88px;
-}
-
 .gap-\[74px\] {
   gap: 74px;
 }
@@ -2088,11 +2068,6 @@ video {
   line-height: 2rem;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
 .text-\[10px\] {
   font-size: 10px;
 }
@@ -2431,7 +2406,13 @@ header ul li.active::after{
   transition: all .4s;
 }
 
-.dropdownContent.active,.dropdownContent2.active,.dropdown.active {
+.dropdownContent.active {
+  max-height: 2000px;
+  margin-top: 18px;
+  overflow: hidden;
+}
+
+.dropdown.active {
   max-height: 2000px;
   margin-top: 18px;
   overflow: hidden;
@@ -2579,10 +2560,6 @@ input[type="number"] {
   left: -0.25rem;
 }
 
-:is([dir="ltr"] .ltr\:-left-10) {
-  left: -2.5rem;
-}
-
 :is([dir="ltr"] .ltr\:-left-2) {
   left: -0.5rem;
 }
@@ -2601,6 +2578,10 @@ input[type="number"] {
 
 :is([dir="ltr"] .ltr\:-left-\[19px\]) {
   left: -19px;
+}
+
+:is([dir="ltr"] .ltr\:-left-\[22px\]) {
+  left: -22px;
 }
 
 :is([dir="ltr"] .ltr\:-left-\[267px\]) {
@@ -2665,10 +2646,6 @@ input[type="number"] {
 
 :is([dir="ltr"] .ltr\:right-auto) {
   right: auto;
-}
-
-:is([dir="ltr"] .ltr\:-left-\[22px\]) {
-  left: -22px;
 }
 
 :is([dir="ltr"] .ltr\:-ml-2) {
@@ -2784,10 +2761,6 @@ input[type="number"] {
   right: -0.25rem;
 }
 
-:is([dir="rtl"] .rtl\:-right-10) {
-  right: -2.5rem;
-}
-
 :is([dir="rtl"] .rtl\:-right-2) {
   right: -0.5rem;
 }
@@ -2802,6 +2775,10 @@ input[type="number"] {
 
 :is([dir="rtl"] .rtl\:-right-\[19px\]) {
   right: -19px;
+}
+
+:is([dir="rtl"] .rtl\:-right-\[22px\]) {
+  right: -22px;
 }
 
 :is([dir="rtl"] .rtl\:left-0) {
@@ -2826,10 +2803,6 @@ input[type="number"] {
 
 :is([dir="rtl"] .rtl\:right-auto) {
   right: auto;
-}
-
-:is([dir="rtl"] .rtl\:-right-\[22px\]) {
-  right: -22px;
 }
 
 :is([dir="rtl"] .rtl\:-ml-\[207px\]) {
@@ -3048,6 +3021,10 @@ input[type="number"] {
     flex-direction: row;
   }
 
+  .sm\:gap-2 {
+    gap: 0.5rem;
+  }
+
   .sm\:gap-28 {
     gap: 7rem;
   }
@@ -3070,10 +3047,6 @@ input[type="number"] {
 
   .sm\:gap-\[22px\] {
     gap: 22px;
-  }
-
-  .sm\:gap-2 {
-    gap: 0.5rem;
   }
 
   .sm\:gap-y-10 {
@@ -3329,11 +3302,6 @@ input[type="number"] {
     padding-right: 2.5rem;
   }
 
-  .md\:py-11 {
-    padding-top: 2.75rem;
-    padding-bottom: 2.75rem;
-  }
-
   .md\:pl-5 {
     padding-left: 1.25rem;
   }
@@ -3445,16 +3413,16 @@ input[type="number"] {
     margin-bottom: -8rem;
   }
 
+  .lg\:-mt-11 {
+    margin-top: -2.75rem;
+  }
+
   .lg\:mt-0 {
     margin-top: 0px;
   }
 
   .lg\:mt-2 {
     margin-top: 0.5rem;
-  }
-
-  .lg\:-mt-11 {
-    margin-top: -2.75rem;
   }
 
   .lg\:block {
@@ -3471,6 +3439,10 @@ input[type="number"] {
 
   .lg\:h-11 {
     height: 2.75rem;
+  }
+
+  .lg\:h-16 {
+    height: 4rem;
   }
 
   .lg\:h-28 {
@@ -3503,10 +3475,6 @@ input[type="number"] {
 
   .lg\:h-auto {
     height: auto;
-  }
-
-  .lg\:h-16 {
-    height: 4rem;
   }
 
   .lg\:w-11 {
