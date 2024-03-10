@@ -49,7 +49,7 @@ hamIcon.addEventListener('click', function () {
 
 let list1 = Array.from(document.querySelectorAll('.list1 > a'));
 let list2 = Array.from(document.querySelectorAll('.list2 > ul'));
-let arrows = Array.from(document.querySelectorAll('.list1 img[alt="arrow"]'));
+let arrows = Array.from(document.querySelectorAll('.list1 svg.arrow'));
 let mobileMenu = document.querySelector('.mobileMenu');
 let serviceLink = document.getElementById('service-link');
 let dropdown = document.querySelector('.dropdown');
@@ -57,7 +57,7 @@ let dropdown = document.querySelector('.dropdown');
 list1.forEach((item) => {
   item.addEventListener('mouseover', function () {
     arrows.forEach((item)=>{item.classList.add('opacity-0')})
-    item.querySelector('img[alt="arrow"]').classList.remove('opacity-0');
+    item.querySelector('svg.arrow').classList.remove('opacity-0');
     let tabId = item.dataset.id;
     list2.forEach((content) => {
       let contentId = content.dataset.id;
@@ -131,7 +131,6 @@ var customer = new Swiper(".customer", {
   breakpoints: {
     768: {
       slidesPerView: 2,
-      spaceBetween: 24,
     },
     992: {
       slidesPerView: 3,
