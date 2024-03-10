@@ -650,10 +650,6 @@ video {
   right: -0.25rem;
 }
 
-.-right-10 {
-  right: -2.5rem;
-}
-
 .-right-2 {
   right: -0.5rem;
 }
@@ -906,6 +902,10 @@ video {
   top: 93px;
 }
 
+.-left-4 {
+  left: -1rem;
+}
+
 .-z-0 {
   z-index: 0;
 }
@@ -966,10 +966,6 @@ video {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
-}
-
-.-ml-\[207px\] {
-  margin-left: -207px;
 }
 
 .-mr-2 {
@@ -2571,6 +2567,10 @@ input[type="number"] {
   opacity: 1;
 }
 
+:is([dir="ltr"] .ltr\:-left-10) {
+  left: -2.5rem;
+}
+
 :is([dir="ltr"] .ltr\:-left-2) {
   left: -0.5rem;
 }
@@ -2643,8 +2643,20 @@ input[type="number"] {
   right: auto;
 }
 
-:is([dir="ltr"] .ltr\:-left-10) {
-  left: -2.5rem;
+:is([dir="ltr"] .ltr\:-left-4) {
+  left: -1rem;
+}
+
+:is([dir="ltr"] .ltr\:left-12) {
+  left: 3rem;
+}
+
+:is([dir="ltr"] .ltr\:-left-3) {
+  left: -0.75rem;
+}
+
+:is([dir="ltr"] .ltr\:-left-1) {
+  left: -0.25rem;
 }
 
 :is([dir="ltr"] .ltr\:-ml-2) {
@@ -2655,16 +2667,16 @@ input[type="number"] {
   margin-left: -74px;
 }
 
+:is([dir="ltr"] .ltr\:-mr-\[207px\]) {
+  margin-right: -207px;
+}
+
 :is([dir="ltr"] .ltr\:ml-\[6px\]) {
   margin-left: 6px;
 }
 
 :is([dir="ltr"] .ltr\:mr-0) {
   margin-right: 0px;
-}
-
-:is([dir="ltr"] .ltr\:-mr-\[207px\]) {
-  margin-right: -207px;
 }
 
 :is([dir="ltr"] .ltr\:rotate-180) {
@@ -2679,6 +2691,11 @@ input[type="number"] {
 
 :is([dir="ltr"] .ltr\:rotate-\[14deg\]) {
   --tw-rotate: 14deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+:is([dir="ltr"] .ltr\:rotate-\[20deg\]) {
+  --tw-rotate: 20deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -2734,8 +2751,8 @@ input[type="number"] {
   padding-right: 1rem;
 }
 
-:is([dir="ltr"] .ltr\:pr-5) {
-  padding-right: 1.25rem;
+:is([dir="ltr"] .ltr\:pl-12) {
+  padding-left: 3rem;
 }
 
 :is([dir="ltr"] .ltr\:font-Astonia) {
@@ -2744,6 +2761,19 @@ input[type="number"] {
 
 :is([dir="ltr"] .ltr\:\[transform\:rotateY\(180deg\)\]) {
   transform: rotateY(180deg);
+}
+
+:is([dir="ltr"] :is([dir="ltr"] .ltr\:ltr\:\[transform\:-rotateY\(180deg\)\])) {
+  transform: -rotateY(180deg);
+}
+
+:is([dir="ltr"] .group:hover .ltr\:group-hover\:-translate-x-1) {
+  --tw-translate-x: -0.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+:is([dir="rtl"] .rtl\:-right-10) {
+  right: -2.5rem;
 }
 
 :is([dir="rtl"] .rtl\:left-0) {
@@ -2762,20 +2792,53 @@ input[type="number"] {
   right: 1.75rem;
 }
 
-:is([dir="rtl"] .rtl\:-right-10) {
-  right: -2.5rem;
+:is([dir="rtl"] .rtl\:-right-4) {
+  right: -1rem;
 }
 
-:is([dir="rtl"] .rtl\:-mr-\[74px\]) {
-  margin-right: -74px;
+:is([dir="rtl"] .rtl\:right-auto) {
+  right: auto;
+}
+
+:is([dir="rtl"] .rtl\:right-12) {
+  right: 3rem;
+}
+
+:is([dir="rtl"] .rtl\:-right-\[19px\]) {
+  right: -19px;
+}
+
+:is([dir="rtl"] .rtl\:-right-2) {
+  right: -0.5rem;
+}
+
+:is([dir="rtl"] .rtl\:-right-3) {
+  right: -0.75rem;
+}
+
+:is([dir="rtl"] .rtl\:-right-1) {
+  right: -0.25rem;
 }
 
 :is([dir="rtl"] .rtl\:-ml-\[207px\]) {
   margin-left: -207px;
 }
 
+:is([dir="rtl"] .rtl\:-mr-\[74px\]) {
+  margin-right: -74px;
+}
+
+:is([dir="rtl"] .rtl\:-rotate-\[20deg\]) {
+  --tw-rotate: -20deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 :is([dir="rtl"] .rtl\:rounded-tl-\[49px\]) {
   border-top-left-radius: 49px;
+}
+
+:is([dir="rtl"] .rtl\:rounded-tl-\[35px\]) {
+  border-top-left-radius: 35px;
 }
 
 :is([dir="rtl"] .rtl\:pl-0) {
@@ -2784,6 +2847,15 @@ input[type="number"] {
 
 :is([dir="rtl"] .rtl\:pr-10) {
   padding-right: 2.5rem;
+}
+
+:is([dir="rtl"] .rtl\:pr-12) {
+  padding-right: 3rem;
+}
+
+:is([dir="rtl"] .group:hover .rtl\:group-hover\:translate-x-1) {
+  --tw-translate-x: 0.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 @media (min-width: 400px) {
@@ -2811,10 +2883,6 @@ input[type="number"] {
     bottom: -39px;
   }
 
-  .sm\:-right-16 {
-    right: -4rem;
-  }
-
   .sm\:-right-\[42px\] {
     right: -42px;
   }
@@ -2838,10 +2906,6 @@ input[type="number"] {
   .sm\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
-  }
-
-  .sm\:-ml-\[21rem\] {
-    margin-left: -21rem;
   }
 
   .sm\:mb-10 {
@@ -3088,12 +3152,12 @@ input[type="number"] {
     line-height: 90px;
   }
 
-  :is([dir="ltr"] .ltr\:sm\:-left-\[42px\]) {
-    left: -42px;
-  }
-
   :is([dir="ltr"] .ltr\:sm\:-left-16) {
     left: -4rem;
+  }
+
+  :is([dir="ltr"] .ltr\:sm\:-left-\[42px\]) {
+    left: -42px;
   }
 
   :is([dir="ltr"] .ltr\:sm\:-mr-\[21rem\]) {
@@ -3246,10 +3310,6 @@ input[type="number"] {
     padding-bottom: 2.75rem;
   }
 
-  .md\:pl-10 {
-    padding-left: 2.5rem;
-  }
-
   .md\:pl-4 {
     padding-left: 1rem;
   }
@@ -3286,12 +3346,20 @@ input[type="number"] {
     padding-right: 1.25rem;
   }
 
-  :is([dir="rtl"] .rtl\:md\:pl-5) {
-    padding-left: 1.25rem;
+  :is([dir="ltr"] .ltr\:md\:pr-4) {
+    padding-right: 1rem;
   }
 
   :is([dir="rtl"] .rtl\:md\:pl-10) {
     padding-left: 2.5rem;
+  }
+
+  :is([dir="rtl"] .rtl\:md\:pl-5) {
+    padding-left: 1.25rem;
+  }
+
+  :is([dir="rtl"] .rtl\:md\:pl-4) {
+    padding-left: 1rem;
   }
 }
 
@@ -3646,6 +3714,14 @@ input[type="number"] {
     padding-right: 1.25rem;
   }
 
+  :is([dir="ltr"] .ltr\:lg\:pl-20) {
+    padding-left: 5rem;
+  }
+
+  :is([dir="ltr"] .ltr\:lg\:pr-12) {
+    padding-right: 3rem;
+  }
+
   :is([dir="ltr"] .ltr\:lg\:text-left) {
     text-align: left;
   }
@@ -3681,6 +3757,14 @@ input[type="number"] {
 
   :is([dir="rtl"] .rtl\:lg\:pr-14) {
     padding-right: 3.5rem;
+  }
+
+  :is([dir="rtl"] .rtl\:lg\:pr-20) {
+    padding-right: 5rem;
+  }
+
+  :is([dir="rtl"] .rtl\:lg\:pl-12) {
+    padding-left: 3rem;
   }
 }
 
