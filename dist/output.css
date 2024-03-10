@@ -2595,6 +2595,10 @@ input[type="number"] {
   left: -1.5rem;
 }
 
+:is([dir="ltr"] .ltr\:-left-\[19px\]) {
+  left: -19px;
+}
+
 :is([dir="ltr"] .ltr\:-left-\[267px\]) {
   left: -267px;
 }
@@ -2611,12 +2615,20 @@ input[type="number"] {
   left: 0px;
 }
 
+:is([dir="ltr"] .ltr\:left-1) {
+  left: 0.25rem;
+}
+
 :is([dir="ltr"] .ltr\:left-10) {
   left: 2.5rem;
 }
 
 :is([dir="ltr"] .ltr\:left-6) {
   left: 1.5rem;
+}
+
+:is([dir="ltr"] .ltr\:left-7) {
+  left: 1.75rem;
 }
 
 :is([dir="ltr"] .ltr\:left-auto) {
@@ -2637,18 +2649,6 @@ input[type="number"] {
 
 :is([dir="ltr"] .ltr\:right-auto) {
   right: auto;
-}
-
-:is([dir="ltr"] .ltr\:-left-\[19px\]) {
-  left: -19px;
-}
-
-:is([dir="ltr"] .ltr\:left-1) {
-  left: 0.25rem;
-}
-
-:is([dir="ltr"] .ltr\:left-7) {
-  left: 1.75rem;
 }
 
 :is([dir="ltr"] .ltr\:-ml-2) {
@@ -3193,12 +3193,12 @@ input[type="number"] {
     padding-left: 5rem;
   }
 
-  :is([dir="ltr"] .ltr\:md\:pr-5) {
-    padding-right: 1.25rem;
-  }
-
   :is([dir="ltr"] .ltr\:md\:pr-10) {
     padding-right: 2.5rem;
+  }
+
+  :is([dir="ltr"] .ltr\:md\:pr-5) {
+    padding-right: 1.25rem;
   }
 }
 
@@ -3539,6 +3539,10 @@ input[type="number"] {
 
   :is([dir="ltr"] .ltr\:lg\:left-0) {
     left: 0px;
+  }
+
+  :is([dir="ltr"] .ltr\:lg\:text-left) {
+    text-align: left;
   }
 }
 
