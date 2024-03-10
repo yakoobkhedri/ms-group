@@ -2651,6 +2651,14 @@ input[type="number"] {
   right: auto;
 }
 
+:is([dir="ltr"] .ltr\:-right-14) {
+  right: -3.5rem;
+}
+
+:is([dir="ltr"] .ltr\:right-6) {
+  right: 1.5rem;
+}
+
 :is([dir="ltr"] .ltr\:-ml-2) {
   margin-left: -0.5rem;
 }
@@ -2670,6 +2678,26 @@ input[type="number"] {
 
 :is([dir="ltr"] .ltr\:rotate-\[-10deg\]) {
   --tw-rotate: -10deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+:is([dir="ltr"] .ltr\:rotate-\[65deg\]) {
+  --tw-rotate: 65deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+:is([dir="ltr"] .ltr\:rotate-\[0deg\]) {
+  --tw-rotate: 0deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+:is([dir="ltr"] .ltr\:rotate-\[24deg\]) {
+  --tw-rotate: 24deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+:is([dir="ltr"] .ltr\:rotate-\[14deg\]) {
+  --tw-rotate: 14deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -2723,6 +2751,10 @@ input[type="number"] {
 
 :is([dir="ltr"] .ltr\:\[transform\:rotateY\(180deg\)\]) {
   transform: rotateY(180deg);
+}
+
+:is([dir="rtl"] .rtl\:right-0) {
+  right: 0px;
 }
 
 @media (min-width: 400px) {
@@ -3541,8 +3573,34 @@ input[type="number"] {
     left: 0px;
   }
 
+  :is([dir="ltr"] .ltr\:lg\:left-12) {
+    left: 3rem;
+  }
+
+  :is([dir="ltr"] .ltr\:lg\:rounded-r-\[30px\]) {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+
+  :is([dir="ltr"] .ltr\:lg\:rounded-tl-\[30px\]) {
+    border-top-left-radius: 30px;
+  }
+
+  :is([dir="ltr"] .ltr\:lg\:rounded-tr-\[60px\]) {
+    border-top-right-radius: 60px;
+  }
+
   :is([dir="ltr"] .ltr\:lg\:text-left) {
     text-align: left;
+  }
+
+  :is([dir="rtl"] .rtl\:lg\:right-12) {
+    right: 3rem;
+  }
+
+  :is([dir="rtl"] .rtl\:lg\:rounded-l-\[30px\]) {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
   }
 }
 
