@@ -102,12 +102,13 @@ var banner = new Swiper(".banner", {
 });
 var services = new Swiper(".services", {
   slidesPerView: 1.3,
-  spaceBetween: 19,
+  loop:true,
+  spaceBetween: 38,
   autoplay: true,
   breakpoints: {
     768: {
       slidesPerView: 2,
-      spaceBetween: 38,
+      spaceBetween: 19,
     },
     1200: {
       slidesPerView: 3,

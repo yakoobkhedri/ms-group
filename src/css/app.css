@@ -16,12 +16,12 @@
 @font-face {
   font-family: kalameh-black;
 
-  src: url('../src/fonts/kalameh/src/fonts/kalameh/KalamehWebFaNum-Black.woff') format("woff");
+  src: url('../src/fonts/kalameh/KalamehWebFaNum-Black.woff') format("woff");
 }
 @font-face {
   font-family: kalameh-light;
 
-  src: url('../src/fonts/kalameh/src/fonts/kalameh/KalamehWebFaNum-Light.woff') format("woff");
+  src: url('../src/fonts/kalameh/KalamehWebFaNum-Light.woff') format("woff");
 }
 @font-face {
   font-family: Astonia;
@@ -140,9 +140,6 @@ input[type="number"] {
   transition: all .4s;
 }
 /* hover */
-.btnHover:hover {
-  transform: scaleX(1.01);
-}
 .btnHover{
   position: relative;
   transition: all .4s;
