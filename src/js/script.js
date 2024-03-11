@@ -86,7 +86,7 @@ var services = new Swiper(".services", {
   slidesPerView: 1.3,
   loop:true,
   spaceBetween: 38,
-  autoplay: true,
+  // autoplay: true,
   breakpoints: {
     768: {
       slidesPerView: 2,

@@ -906,6 +906,14 @@ video {
   bottom: 26px !important;
 }
 
+.-right-\[18px\] {
+  right: -18px;
+}
+
+.-top-\[68px\] {
+  top: -68px;
+}
+
 .-z-0 {
   z-index: 0;
 }
@@ -1094,6 +1102,18 @@ video {
 
 .mt-\[74px\] {
   margin-top: 74px;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+.-mb-\[21px\] {
+  margin-bottom: -21px;
+}
+
+.-ml-\[19px\] {
+  margin-left: -19px;
 }
 
 .block {
@@ -1286,6 +1306,14 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-\[243px\] {
+  height: 243px;
+}
+
+.h-\[221px\] {
+  height: 221px;
 }
 
 .\!w-2 {
@@ -1745,12 +1773,21 @@ video {
   border-top-right-radius: 64px;
 }
 
+.rounded-b-\[35px\] {
+  border-bottom-right-radius: 35px;
+  border-bottom-left-radius: 35px;
+}
+
 .rounded-tl-\[35px\] {
   border-top-left-radius: 35px;
 }
 
 .rounded-tl-none {
   border-top-left-radius: 0px;
+}
+
+.rounded-tr-\[30px\] {
+  border-top-right-radius: 30px;
 }
 
 .border-b {
@@ -1977,6 +2014,11 @@ video {
 .py-\[21px\] {
   padding-top: 21px;
   padding-bottom: 21px;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .pb-0 {
@@ -2662,6 +2704,10 @@ input[type="number"] {
   right: auto;
 }
 
+:is([dir="ltr"] .ltr\:-left-\[18px\]) {
+  left: -18px;
+}
+
 :is([dir="ltr"] .ltr\:-ml-2) {
   margin-left: -0.5rem;
 }
@@ -2852,6 +2898,10 @@ input[type="number"] {
   padding-right: 3rem;
 }
 
+:is([dir="rtl"] .rtl\:\[transform\:rotateY\(180deg\)\]) {
+  transform: rotateY(180deg);
+}
+
 :is([dir="rtl"] .group:hover .rtl\:group-hover\:translate-x-1) {
   --tw-translate-x: 0.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -2900,6 +2950,14 @@ input[type="number"] {
 
   .sm\:right-7 {
     right: 1.75rem;
+  }
+
+  .sm\:-top-\[70px\] {
+    top: -70px;
+  }
+
+  .sm\:-top-\[105px\] {
+    top: -105px;
   }
 
   .sm\:mx-0 {
@@ -2987,6 +3045,14 @@ input[type="number"] {
     height: auto;
   }
 
+  .sm\:h-\[347px\] {
+    height: 347px;
+  }
+
+  .sm\:h-\[315px\] {
+    height: 315px;
+  }
+
   .sm\:w-11 {
     width: 2.75rem;
   }
@@ -3027,12 +3093,20 @@ input[type="number"] {
     width: auto;
   }
 
+  .sm\:w-32 {
+    width: 8rem;
+  }
+
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .sm\:flex-row {
     flex-direction: row;
+  }
+
+  .sm\:items-end {
+    align-items: flex-end;
   }
 
   .sm\:gap-2 {
@@ -3087,6 +3161,11 @@ input[type="number"] {
   .sm\:py-4 {
     padding-top: 1rem;
     padding-bottom: 1rem;
+  }
+
+  .sm\:px-14 {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
   }
 
   .sm\:pb-10 {
@@ -3199,6 +3278,10 @@ input[type="number"] {
 
   .md\:right-11 {
     right: 2.75rem;
+  }
+
+  .md\:-top-\[70px\] {
+    top: -70px;
   }
 
   .md\:order-first {
