@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html dir="ltr">
+<html dir="rtl">
 
 <head>
     <meta charset="UTF-8" />
@@ -20,23 +20,27 @@
         <div style="visibility: hidden; opacity: 0;" data-button="contact-modal"
             class="modal-container overflow-auto bg-black/60 backdrop-blur-sm fixed inset-0 z-50 transition-all flex justify-center items-center px-7">
             <div
-                class="modal-content bg-white max-w-[797px] md:h-[354px] w-full rounded-[27px] p-7 pb-11 md:p-5 flex flex-col md:flex-row justify-center md:justify-start items-center gap-7 md:gap-14 relative">
-                <p class="block md:hidden font-black text-xl text-center mt-4">مشتاق شنیدن صدای گرم شما هستیم!</p>
-                <div class="relative rounded-[27px] bg-orange select-none hidden md:block">
-                    <div
-                        class="rounded-[27px] bg-secondary absolute -inset-5 -left-2 ltr:-right-2 ltr:-left-6 -top-8 ltr:rotate-[-10deg] rotate-[10deg] h-[356px] z-0">
+                class="modal-content bg-white max-w-[797px] md:h-[354px] w-full rounded-[27px] p-7 pb-11 md:p-5 flex flex-col md:flex-row justify-center md:justify-start items-center gap-7 md:gap-[114px] relative">
+                <p class="block md:hidden font-black text-xl text-center mt-4 rtl:font-yekanBakhBold">مشتاق شنیدن صدای گرم شما هستیم!</p>
+                    <!-- shadow -->
+                    <div class="absolute hidden md:block shadow-8 my-auto h-2 w-2 inset-0 ltr:mr-auto rtl:ml-auto -z-0"></div>
+                    <!-- bg -->
+                    <img alt="bg" src="../img/Rectangle 33 (4).png" class="absolute ltr:[transform:rotateY(180deg)] hidden md:block inset-0 m-auto ltr:-ml-8 rtl:-mr-8 -z-0 w-[309px] h-[315px] ltr:-left-[26px] rtl:-right-[26px] rotate-[1deg]">
+                    <img alt="bg" src="../img/Rectangle 36.png" class="absolute ltr:[transform:rotateY(180deg)] hidden md:block inset-0 m-auto -z-0 ltr:-ml-[42px] rtl:-mr-[42px] w-[309px] h-[277px]">
+                    <img alt="bg" src="../img/Rectangle 34.png" class="absolute ltr:[transform:rotateY(180deg)] hidden md:block inset-0 -top-5 m-auto -z-0 ltr:-ml-[17px] rtl:-mr-[17px] w-[256px] h-[252px]">
+                    <!--  -->
+                    <div class="relative ltr:left-6 rtl:right-6 -top-3 rounded-[27px] bg-orange select-none hidden md:block">
+                        <div class="p-5 px-10 text-[#1E2D48] rtl:font-yekanBakhBold text-[22px] font-black flex flex-col gap-3 relative z-1">
+                            <span>مشتاق</span>
+                            <span class="rounded-[10px] bg-purple text-white px-3 py-1 text-center font-yekanBakhRegular">شنیدن</span>
+                            <span>
+                                <span>صدای</span>
+                                <span class="font-yekanBakhRegular">گرم</span>
+                            </span>
+                            <span>شما</span>
+                            <span>هستیم!</span>
+                        </div>
                     </div>
-                    <div class="p-5 px-10 text-white text-[28px] font-black flex flex-col gap-3 relative z-1">
-                        <span>مشتاق</span>
-                        <span class="text-secondary bg-white px-3 font-normal">شنیدن</span>
-                        <span>
-                            <span>صدای</span>
-                            <span class="font-normal">گرم</span>
-                        </span>
-                        <span>شما</span>
-                        <span>هستیم!</span>
-                    </div>
-                </div>
                 <ul class="flex flex-col gap-5 justify-center items-start">
                     <li class="flex items-center gap-4">
                         <span>
@@ -45,18 +49,18 @@
                                 <g opacity="0.4">
                                     <path
                                         d="M28.8365 10.9799C27.8844 10.804 27.01 11.4116 26.8288 12.341C26.6475 13.2703 27.257 14.1777 28.1832 14.3596C30.9717 14.9032 33.1249 17.0617 33.6706 19.8598C33.826 20.6652 34.5351 21.2528 35.3517 21.2528C35.4613 21.2528 35.5708 21.2428 35.6824 21.2229C36.6085 21.037 37.218 20.1316 37.0368 19.2002C36.2221 15.0211 33.0054 11.7933 28.8365 10.9799Z"
-                                        fill="#F76B16" />
+                                        fill="#F6AB36" />
                                     <path
                                         d="M28.7117 4.01586C28.2655 3.9519 27.8174 4.08381 27.4608 4.36762C27.0944 4.65542 26.8653 5.07113 26.8155 5.53682C26.7099 6.47817 27.3891 7.32958 28.3293 7.43551C34.8126 8.15901 39.8519 13.2095 40.5809 19.7131C40.6785 20.5845 41.4094 21.242 42.2819 21.242C42.3476 21.242 42.4113 21.238 42.4771 21.23C42.9332 21.1801 43.3395 20.9542 43.6263 20.5945C43.9112 20.2347 44.0406 19.787 43.9888 19.3293C43.0806 11.2149 36.8004 4.91724 28.7117 4.01586Z"
-                                        fill="#F76B16" />
+                                        fill="#F6AB36" />
                                 </g>
                                 <path fill-rule="evenodd" clip-rule="evenodd"
                                     d="M22.0635 25.9448C30.0416 33.9207 31.8515 24.6934 36.9313 29.7696C41.8286 34.6655 44.6432 35.6464 38.4385 41.8494C37.6613 42.474 32.7232 49.9885 15.3692 32.6393C-1.98696 15.288 5.52317 10.3449 6.14794 9.5679C12.3677 3.34769 13.3317 6.17877 18.229 11.0747C23.3087 16.153 14.0853 17.9688 22.0635 25.9448Z"
-                                    fill="#F76B16" />
+                                    fill="#F6AB36" />
                             </svg>
                         </span>
                         <div>
-                            <span class="text-base sm:text-lg font-black">021-91016668</span>
+                            <span class="text-base sm:text-lg font-black rtl:font-yekanBakhBold text-[#1E2D48]">021-91016668</span>
                             <p class="text-sm opacity-50 mt-1">تماس در روز های کاری از 9 صبح تا 7 شب</p>
                         </div>
                     </li>
@@ -66,14 +70,14 @@
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path opacity="0.4"
                                     d="M44 31.8804C44 37.4604 39.52 41.9804 33.94 42.0004H33.92H14.1C8.54 42.0004 4 37.5004 4 31.9204V31.9004C4 31.9004 4.012 23.0484 4.028 18.5964C4.03 17.7604 4.99 17.2924 5.644 17.8124C10.396 21.5824 18.894 28.4564 19 28.5464C20.42 29.6844 22.22 30.3264 24.06 30.3264C25.9 30.3264 27.7 29.6844 29.12 28.5244C29.226 28.4544 37.534 21.7864 42.358 17.9544C43.014 17.4324 43.978 17.9004 43.98 18.7344C44 23.1524 44 31.8804 44 31.8804Z"
-                                    fill="#F76B16" />
+                                    fill="#F6AB36" />
                                 <path
                                     d="M42.9518 11.3471C41.2198 8.08315 37.8118 5.99915 34.0598 5.99915H14.0998C10.3478 5.99915 6.93977 8.08315 5.20777 11.3471C4.81977 12.0771 5.00377 12.9871 5.64977 13.5031L20.4998 25.3811C21.5398 26.2211 22.7998 26.6391 24.0598 26.6391C24.0678 26.6391 24.0738 26.6391 24.0798 26.6391C24.0858 26.6391 24.0938 26.6391 24.0998 26.6391C25.3598 26.6391 26.6198 26.2211 27.6598 25.3811L42.5098 13.5031C43.1558 12.9871 43.3398 12.0771 42.9518 11.3471Z"
-                                    fill="#F76B16" />
+                                    fill="#F6AB36" />
                             </svg>
                         </span>
                         <div>
-                            <span class="text-base sm:text-lg font-black">info@moeidgroup.com</span>
+                            <span class="text-base sm:text-lg font-black rtl:font-yekanBakhBold text-[#1E2D48]">info@moeidgroup.com</span>
                             <p class="text-sm opacity-50 mt-1">ارتباط از طریق ایمیل</p>
                         </div>
                     </li>
@@ -83,14 +87,14 @@
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M17.0632 5.87354C21.433 3.33455 26.8041 3.37893 31.1328 5.98979C35.4189 8.65383 38.0239 13.4084 37.9998 18.5229C37.8999 23.6039 35.1066 28.38 31.6149 32.0722C29.5997 34.2128 27.3452 36.1057 24.8977 37.7121C24.6456 37.8578 24.3695 37.9554 24.083 38C23.8072 37.9883 23.5386 37.9068 23.3015 37.7629C19.5649 35.3491 16.2867 32.2681 13.6247 28.6679C11.3972 25.6627 10.1317 22.032 10 18.2688L10.01 17.7214C10.1918 12.8093 12.8496 8.32186 17.0632 5.87354ZM25.8145 14.0695C24.0381 13.3145 21.9901 13.7247 20.6266 15.1087C19.2632 16.4927 18.8533 18.5774 19.5883 20.3896C20.3234 22.2017 22.0584 23.3837 23.9832 23.3837C25.2442 23.3928 26.4564 22.8877 27.3496 21.981C28.2429 21.0742 28.743 19.8413 28.7385 18.5568C28.7452 16.5961 27.5909 14.8246 25.8145 14.0695Z"
-                                    fill="#F76B16" />
+                                    fill="#F6AB36" />
                                 <path opacity="0.4"
                                     d="M24 44C29.5228 44 34 43.1046 34 42C34 40.8954 29.5228 40 24 40C18.4772 40 14 40.8954 14 42C14 43.1046 18.4772 44 24 44Z"
-                                    fill="#F76B16" />
+                                    fill="#F6AB36" />
                             </svg>
                         </span>
                         <div>
-                            <span class="text-base sm:text-lg font-black">تهران،‌خیابان شریعتی،‌ نبش کودکان غزه،‌پلاک
+                            <span class="text-base sm:text-lg rtl:font-yekanBakhBold font-black text-[#1E2D48]">تهران،‌خیابان شریعتی،‌ نبش کودکان غزه،‌پلاک
                                 51</span>
                             <p class="text-sm opacity-50 mt-1">حضور با هماهنگی قبلی</p>
                         </div>
@@ -107,7 +111,7 @@
     </div>
 
     <!-- header -->
-    <header id="header" class="lg:pt-10 pt-6 relative z-50">
+    <header id="header" class="lg:pt-10 pt-6 relative z-40">
         <div class="max-w-content mx-auto px-5 w-full">
             <nav class="flex items-center gap-5 justify-between">
                 <div class="flex items-center gap-16">
@@ -363,7 +367,7 @@
                         </div>
                     </div>
                 </div>
-                <a
+                <a id="contact-modal"
                     class="bg-gold shadow-1 py-4 btnHover px-9 text-white rounded-[20px] rounded-tl-none ltr:rounded-tr-none ltr:rounded-tl-[20px] hidden lg:flex items-center justify-center gap-[10px] text-sm font-bold">
                     <p>همین الان شروع کنید</p>
                     <svg class="ltr:rotate-180" width="7" height="12" viewBox="0 0 7 12" fill="none"
@@ -500,7 +504,7 @@
                                 ساخته</span> های<br> خود را به ما بسپارید
                         </h1>
                         <span
-                            class="w-6 h-0.5 bg-gold relative -top-[22px] sm:-top-[42px] ltr:-left-[26px] ltr:right-auto -right-[26px] ltr:sm:-left-[100px] sm:-right-[100px]"></span>
+                            class="w-6 h-0.5 bg-gold relative -top-[22px] sm:-top-[42px] ltr:-left-3 ltr:right-auto -right-[26px] ltr:sm:-left-8 sm:-right-[100px]"></span>
                     </div>
                     <p
                         class="opacity-50 mt-[30px] text-white lg:text-black sm:mt-[52px] text-sm sm:text-base text-center sm:text-right leading-6">
@@ -541,9 +545,15 @@
                                 class="absolute hidden bottom-[1px] lg:flex items-center justify-center gap-4 w-full inset-x-0">
                                 <div
                                     class="swiper-button-next active:scale-95 transition-all static w-11 h-11 rotate-180 bg-purple rounded-full after:text-sm after:font-black after:text-white">
+                                    <svg class="!w-2 rtl:hidden" width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.799853 0.800294L5.59985 5.60029L0.799854 10.4003" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
                                 </div>
                                 <div
                                     class="swiper-button-prev active:scale-95 transition-all static w-11 h-11 rotate-180 bg-purple rounded-full after:text-sm after:font-black after:text-white">
+                                    <svg class="!w-2 rtl:hidden" width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.60005 10.3999L0.800049 5.5999L5.60005 0.799902" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
                                 </div>
                             </div>
                         </div>
