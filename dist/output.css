@@ -898,6 +898,14 @@ video {
   top: 6px;
 }
 
+.bottom-\[26px\] {
+  bottom: 26px;
+}
+
+.\!bottom-\[26px\] {
+  bottom: 26px !important;
+}
+
 .-z-0 {
   z-index: 0;
 }
@@ -2412,11 +2420,17 @@ header ul li.active::after{
   overflow: hidden;
 }
 
+.dropdown{
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
 .dropdown.active {
   max-height: 2000px;
   margin-top: 18px;
   overflow: hidden;
-  padding: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .accordionContent.active,.accordionContent2.active{
@@ -3372,6 +3386,18 @@ input[type="number"] {
     top: 3.5rem;
   }
 
+  .lg\:\!top-\[182px\] {
+    top: 182px !important;
+  }
+
+  .lg\:-right-\[267px\] {
+    right: -267px;
+  }
+
+  .lg\:bottom-0 {
+    bottom: 0px;
+  }
+
   .lg\:order-first {
     order: -9999;
   }
@@ -3402,6 +3428,10 @@ input[type="number"] {
 
   .lg\:col-span-9 {
     grid-column: span 9 / span 9;
+  }
+
+  .lg\:col-span-6 {
+    grid-column: span 6 / span 6;
   }
 
   .lg\:mx-auto {
@@ -3513,6 +3543,11 @@ input[type="number"] {
     width: 100%;
   }
 
+  .lg\:rotate-90 {
+    --tw-rotate: 90deg;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
   .lg\:flex-row {
     flex-direction: row;
   }
@@ -3555,6 +3590,10 @@ input[type="number"] {
 
   .lg\:gap-\[52px\] {
     gap: 52px;
+  }
+
+  .lg\:gap-7 {
+    gap: 1.75rem;
   }
 
   .lg\:gap-x-16 {
@@ -3677,6 +3716,14 @@ input[type="number"] {
     left: 2rem;
   }
 
+  :is([dir="ltr"] .ltr\:lg\:-left-\[267px\]) {
+    left: -267px;
+  }
+
+  :is([dir="ltr"] .ltr\:lg\:right-auto) {
+    right: auto;
+  }
+
   :is([dir="ltr"] .ltr\:lg\:-ml-\[84px\]) {
     margin-left: -84px;
   }
@@ -3757,12 +3804,24 @@ input[type="number"] {
 }
 
 @media (min-width: 1280px) {
+  .xl\:col-span-5 {
+    grid-column: span 5 / span 5;
+  }
+
+  .xl\:col-span-7 {
+    grid-column: span 7 / span 7;
+  }
+
   .xl\:flex {
     display: flex;
   }
 
   .xl\:gap-10 {
     gap: 2.5rem;
+  }
+
+  .xl\:gap-9 {
+    gap: 2.25rem;
   }
 
   .xl\:text-base {

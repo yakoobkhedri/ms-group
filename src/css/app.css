@@ -106,11 +106,16 @@ header ul li.active::after{
   margin-top: 18px;
   overflow: hidden;
 }
+.dropdown{
+  padding-left: 12px;
+  padding-right: 12px;
+}
 .dropdown.active {
   max-height: 2000px;
   margin-top: 18px;
   overflow: hidden;
-  padding: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 .accordionContent.active,.accordionContent2.active{
   max-height: 2000px;
