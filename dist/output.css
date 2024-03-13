@@ -626,6 +626,10 @@ video {
   bottom: -29px;
 }
 
+.-bottom-\[61px\] {
+  bottom: -61px;
+}
+
 .-left-14 {
   left: -3.5rem;
 }
@@ -882,6 +886,10 @@ video {
   top: 100px;
 }
 
+.top-\[10px\] {
+  top: 10px;
+}
+
 .top-\[125px\] {
   top: 125px;
 }
@@ -902,12 +910,20 @@ video {
   top: 77px;
 }
 
-.top-\[10px\] {
-  top: 10px;
+.-top-\[54px\] {
+  top: -54px;
 }
 
-.-bottom-\[61px\] {
-  bottom: -61px;
+.-top-\[41px\] {
+  top: -41px;
+}
+
+.-top-\[70px\] {
+  top: -70px;
+}
+
+.-top-\[59px\] {
+  top: -59px;
 }
 
 .-z-0 {
@@ -1139,6 +1155,10 @@ video {
 
 .mt-\[82px\] {
   margin-top: 82px;
+}
+
+.mt-12 {
+  margin-top: 3rem;
 }
 
 .block {
@@ -1936,6 +1956,11 @@ video {
   background-color: rgb(228 228 228 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#e9e9e9\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(233 233 233 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#ebeaea\] {
   --tw-bg-opacity: 1;
   background-color: rgb(235 234 234 / var(--tw-bg-opacity));
@@ -1986,6 +2011,11 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#f0f0f0\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 240 240 / var(--tw-bg-opacity));
 }
 
 .p-1 {
@@ -3153,6 +3183,26 @@ input[type="number"] {
     right: 1.75rem;
   }
 
+  .sm\:right-1 {
+    right: 0.25rem;
+  }
+
+  .sm\:-top-\[41px\] {
+    top: -41px;
+  }
+
+  .sm\:-top-3 {
+    top: -0.75rem;
+  }
+
+  .sm\:-top-\[72px\] {
+    top: -72px;
+  }
+
+  .sm\:-top-\[43px\] {
+    top: -43px;
+  }
+
   .sm\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
@@ -3196,6 +3246,14 @@ input[type="number"] {
 
   .sm\:mt-\[52px\] {
     margin-top: 52px;
+  }
+
+  .sm\:mt-8 {
+    margin-top: 2rem;
+  }
+
+  .sm\:mt-10 {
+    margin-top: 2.5rem;
   }
 
   .sm\:block {
@@ -3334,6 +3392,10 @@ input[type="number"] {
     gap: 22px;
   }
 
+  .sm\:gap-10 {
+    gap: 2.5rem;
+  }
+
   .sm\:gap-y-10 {
     row-gap: 2.5rem;
   }
@@ -3348,6 +3410,10 @@ input[type="number"] {
 
   .sm\:p-8 {
     padding: 2rem;
+  }
+
+  .sm\:p-\[15px\] {
+    padding: 15px;
   }
 
   .sm\:px-14 {
@@ -3376,6 +3442,10 @@ input[type="number"] {
 
   .sm\:pb-\[71px\] {
     padding-bottom: 71px;
+  }
+
+  .sm\:pt-0 {
+    padding-top: 0px;
   }
 
   .sm\:text-right {
@@ -3440,6 +3510,10 @@ input[type="number"] {
     left: -2rem;
   }
 
+  :is([dir="ltr"] .ltr\:sm\:left-1) {
+    left: 0.25rem;
+  }
+
   :is([dir="ltr"] .ltr\:sm\:-mr-\[21rem\]) {
     margin-right: -21rem;
   }
@@ -3478,6 +3552,38 @@ input[type="number"] {
     right: 2.75rem;
   }
 
+  .md\:-top-\[38px\] {
+    top: -38px;
+  }
+
+  .md\:-top-3 {
+    top: -0.75rem;
+  }
+
+  .md\:-top-\[41px\] {
+    top: -41px;
+  }
+
+  .md\:top-\[17px\] {
+    top: 17px;
+  }
+
+  .md\:-top-\[72px\] {
+    top: -72px;
+  }
+
+  .md\:-top-\[35px\] {
+    top: -35px;
+  }
+
+  .md\:-top-\[18px\] {
+    top: -18px;
+  }
+
+  .md\:-z-0 {
+    z-index: 0;
+  }
+
   .md\:order-first {
     order: -9999;
   }
@@ -3513,10 +3619,6 @@ input[type="number"] {
 
   .md\:block {
     display: block;
-  }
-
-  .md\:flex {
-    display: flex;
   }
 
   .md\:hidden {
@@ -3584,6 +3686,15 @@ input[type="number"] {
     background-color: rgb(238 238 238 / var(--tw-bg-opacity));
   }
 
+  .md\:bg-\[\#f0f0f0\] {
+    --tw-bg-opacity: 1;
+    background-color: rgb(240 240 240 / var(--tw-bg-opacity));
+  }
+
+  .md\:bg-transparent {
+    background-color: transparent;
+  }
+
   .md\:p-10 {
     padding: 2.5rem;
   }
@@ -3612,6 +3723,11 @@ input[type="number"] {
   .md\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   :is([dir="ltr"] .ltr\:md\:left-11) {
@@ -3686,6 +3802,22 @@ input[type="number"] {
 
   .lg\:top-14 {
     top: 3.5rem;
+  }
+
+  .lg\:top-\[10px\] {
+    top: 10px;
+  }
+
+  .lg\:top-\[17px\] {
+    top: 17px;
+  }
+
+  .lg\:-top-\[27px\] {
+    top: -27px;
+  }
+
+  .lg\:-top-\[13px\] {
+    top: -13px;
   }
 
   .lg\:order-first {
@@ -4102,6 +4234,22 @@ input[type="number"] {
 }
 
 @media (min-width: 1280px) {
+  .xl\:top-\[10px\] {
+    top: 10px;
+  }
+
+  .xl\:top-\[17px\] {
+    top: 17px;
+  }
+
+  .xl\:-top-\[17px\] {
+    top: -17px;
+  }
+
+  .xl\:-top-\[10px\] {
+    top: -10px;
+  }
+
   .xl\:col-span-5 {
     grid-column: span 5 / span 5;
   }
