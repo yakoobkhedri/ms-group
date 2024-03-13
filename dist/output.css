@@ -1133,6 +1133,10 @@ video {
   margin-top: 14px;
 }
 
+.mt-\[15px\] {
+  margin-top: 15px;
+}
+
 .mt-\[30px\] {
   margin-top: 30px;
 }
@@ -1894,6 +1898,14 @@ video {
   border-bottom-width: 2.39px;
 }
 
+.border-t-2 {
+  border-top-width: 2px;
+}
+
+.border-dashed {
+  border-style: dashed;
+}
+
 .border-\[\#0000001A\] {
   border-color: #0000001A;
 }
@@ -2204,6 +2216,10 @@ video {
   padding-top: 4rem;
 }
 
+.pt-2 {
+  padding-top: 0.5rem;
+}
+
 .pt-5 {
   padding-top: 1.25rem;
 }
@@ -2320,6 +2336,10 @@ video {
 
 .leading-7 {
   line-height: 1.75rem;
+}
+
+.leading-8 {
+  line-height: 2rem;
 }
 
 .leading-9 {
@@ -2540,6 +2560,10 @@ header ul li.active::after{
 
 .shadow-10{
   box-shadow: 0px 0px 43.01886749267578px 0px #0000001A;
+}
+
+.shadow-11{
+  box-shadow: 0px -4px 96px -15px #0000001A;
 }
 
 .shadow-next{
@@ -3359,6 +3383,18 @@ input[type="number"] {
     row-gap: 2.5rem;
   }
 
+  .sm\:rounded-\[26px\] {
+    border-radius: 26px;
+  }
+
+  .sm\:rounded-\[30px\] {
+    border-radius: 30px;
+  }
+
+  .sm\:p-5 {
+    padding: 1.25rem;
+  }
+
   .sm\:p-6 {
     padding: 1.5rem;
   }
@@ -3451,6 +3487,10 @@ input[type="number"] {
   .sm\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
+  }
+
+  .sm\:leading-6 {
+    line-height: 1.5rem;
   }
 
   .sm\:leading-8 {
@@ -3582,6 +3622,10 @@ input[type="number"] {
 
   .md\:w-auto {
     width: auto;
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:grid-cols-4 {
@@ -3894,6 +3938,10 @@ input[type="number"] {
 
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .lg\:flex-row {
