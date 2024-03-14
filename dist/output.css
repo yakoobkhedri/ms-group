@@ -914,6 +914,10 @@ video {
   top: 77px;
 }
 
+.left-7 {
+  left: 1.75rem;
+}
+
 .-z-0 {
   z-index: 0;
 }
@@ -1805,10 +1809,6 @@ video {
 
 .rounded-\[24px\] {
   border-radius: 24px;
-}
-
-.rounded-\[26px\] {
-  border-radius: 26px;
 }
 
 .rounded-\[27px\] {
@@ -2863,6 +2863,10 @@ input[type="number"] {
   right: auto;
 }
 
+:is([dir="ltr"] .ltr\:right-7) {
+  right: 1.75rem;
+}
+
 :is([dir="ltr"] .ltr\:-ml-2) {
   margin-left: -0.5rem;
 }
@@ -3186,6 +3190,10 @@ input[type="number"] {
     right: 1.75rem;
   }
 
+  .sm\:-top-\[13px\] {
+    top: -13px;
+  }
+
   .sm\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
@@ -3335,6 +3343,10 @@ input[type="number"] {
     width: auto;
   }
 
+  .sm\:w-20 {
+    width: 5rem;
+  }
+
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -3357,6 +3369,10 @@ input[type="number"] {
 
   .sm\:gap-28 {
     gap: 7rem;
+  }
+
+  .sm\:gap-4 {
+    gap: 1rem;
   }
 
   .sm\:gap-5 {
@@ -3938,10 +3954,6 @@ input[type="number"] {
 
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .lg\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .lg\:flex-row {
