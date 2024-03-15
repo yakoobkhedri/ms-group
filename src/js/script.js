@@ -82,6 +82,20 @@ var banner2 = new Swiper(".banner2", {
     prevEl: ".swiper-button-prev",
   },
 });
+var banner3 = new Swiper(".banner3", {
+  slidesPerView: 1,
+  spaceBetween: 5,
+  loop:true,
+  autoplay: true,
+  pagination: {
+    el: ".swiper-pagination3",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 var services = new Swiper(".services", {
   slidesPerView: 1.3,
   loop:true,
