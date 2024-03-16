@@ -1289,6 +1289,10 @@ video {
   height: 100px;
 }
 
+.h-\[104\%\] {
+  height: 104%;
+}
+
 .h-\[104px\] {
   height: 104px;
 }
@@ -1431,10 +1435,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-\[104\%\] {
-  height: 104%;
 }
 
 .\!w-2 {
@@ -4032,10 +4032,6 @@ input[type="number"] {
 
   .lg\:top-\[6px\] {
     top: 6px;
-  }
-
-  .lg\:-top-\[23px\] {
-    top: -23px;
   }
 
   .lg\:order-first {

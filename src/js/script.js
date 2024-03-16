@@ -147,7 +147,12 @@ var customer = new Swiper(".customer", {
 var comments = new Swiper(".comments", {
   direction: "vertical",
   slidesPerView: 2,
-  spaceBetween: 20,
+  spaceBetween: 110,
   loop:true,
   autoplay: true,
+  breakpoints: {
+    576: {
+      spaceBetween: 20,
+    }
+  },
 });
