@@ -144,3 +144,10 @@ var customer = new Swiper(".customer", {
     clickable: true,
   },
 });
+var comments = new Swiper(".comments", {
+  direction: "vertical",
+  slidesPerView: 2,
+  spaceBetween: 20,
+  loop:true,
+  autoplay: true,
+});
