@@ -934,6 +934,14 @@ video {
   top: 77px;
 }
 
+.-top-44 {
+  top: -11rem;
+}
+
+.-top-80 {
+  top: -20rem;
+}
+
 .-z-0 {
   z-index: 0;
 }
@@ -1165,6 +1173,10 @@ video {
   margin-top: 2rem;
 }
 
+.mt-9 {
+  margin-top: 2.25rem;
+}
+
 .mt-\[10px\] {
   margin-top: 10px;
 }
@@ -1187,10 +1199,6 @@ video {
 
 .mt-\[82px\] {
   margin-top: 82px;
-}
-
-.mt-9 {
-  margin-top: 2.25rem;
 }
 
 .block {
@@ -1283,10 +1291,6 @@ video {
 
 .h-9 {
   height: 2.25rem;
-}
-
-.h-96 {
-  height: 24rem;
 }
 
 .h-\[100px\] {
@@ -1441,12 +1445,12 @@ video {
   height: 100%;
 }
 
-.h-\[420px\] {
-  height: 420px;
+.h-\[95\%\] {
+  height: 95%;
 }
 
-.h-\[460px\] {
-  height: 460px;
+.h-\[103\%\] {
+  height: 103%;
 }
 
 .\!w-2 {
@@ -2272,6 +2276,11 @@ video {
   padding-bottom: 7rem;
 }
 
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -2295,11 +2304,6 @@ video {
 .py-\[21px\] {
   padding-top: 21px;
   padding-bottom: 21px;
-}
-
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
 }
 
 .pb-0 {
@@ -2336,6 +2340,10 @@ video {
 
 .pb-8 {
   padding-bottom: 2rem;
+}
+
+.pb-9 {
+  padding-bottom: 2.25rem;
 }
 
 .pl-0 {
@@ -2388,10 +2396,6 @@ video {
 
 .pt-8 {
   padding-top: 2rem;
-}
-
-.pb-2 {
-  padding-bottom: 0.5rem;
 }
 
 .text-center {
@@ -3435,6 +3439,10 @@ input[type="number"] {
     margin-top: 12rem;
   }
 
+  .sm\:mt-5 {
+    margin-top: 1.25rem;
+  }
+
   .sm\:mt-52 {
     margin-top: 13rem;
   }
@@ -3451,20 +3459,16 @@ input[type="number"] {
     margin-top: 15rem;
   }
 
+  .sm\:mt-7 {
+    margin-top: 1.75rem;
+  }
+
   .sm\:mt-8 {
     margin-top: 2rem;
   }
 
   .sm\:mt-\[52px\] {
     margin-top: 52px;
-  }
-
-  .sm\:mt-7 {
-    margin-top: 1.75rem;
-  }
-
-  .sm\:mt-5 {
-    margin-top: 1.25rem;
   }
 
   .sm\:block {
@@ -3664,6 +3668,11 @@ input[type="number"] {
     padding-right: 3.5rem;
   }
 
+  .sm\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
   .sm\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -3682,11 +3691,6 @@ input[type="number"] {
   .sm\:py-6 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-  }
-
-  .sm\:px-6 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
   }
 
   .sm\:py-8 {
@@ -3776,12 +3780,12 @@ input[type="number"] {
     left: 0.25rem;
   }
 
-  :is([dir="ltr"] .ltr\:sm\:right-1) {
-    right: 0.25rem;
-  }
-
   :is([dir="ltr"] .ltr\:sm\:left-5) {
     left: 1.25rem;
+  }
+
+  :is([dir="ltr"] .ltr\:sm\:right-1) {
+    right: 0.25rem;
   }
 
   :is([dir="ltr"] .ltr\:sm\:-mr-\[21rem\]) {
@@ -3875,6 +3879,10 @@ input[type="number"] {
     margin-top: 6rem;
   }
 
+  .md\:mt-9 {
+    margin-top: 2.25rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -3893,10 +3901,6 @@ input[type="number"] {
 
   .md\:h-\[354px\] {
     height: 354px;
-  }
-
-  .md\:h-96 {
-    height: 24rem;
   }
 
   .md\:w-32 {
@@ -4179,6 +4183,10 @@ input[type="number"] {
     height: 7rem;
   }
 
+  .lg\:h-96 {
+    height: 24rem;
+  }
+
   .lg\:h-\[167px\] {
     height: 167px;
   }
@@ -4205,10 +4213,6 @@ input[type="number"] {
 
   .lg\:h-auto {
     height: auto;
-  }
-
-  .lg\:h-96 {
-    height: 24rem;
   }
 
   .lg\:w-11 {
