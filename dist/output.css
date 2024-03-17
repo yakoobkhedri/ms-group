@@ -1189,6 +1189,10 @@ video {
   margin-top: 82px;
 }
 
+.mt-9 {
+  margin-top: 2.25rem;
+}
+
 .block {
   display: block;
 }
@@ -1435,6 +1439,14 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-\[420px\] {
+  height: 420px;
+}
+
+.h-\[460px\] {
+  height: 460px;
 }
 
 .\!w-2 {
@@ -2285,6 +2297,11 @@ video {
   padding-bottom: 21px;
 }
 
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -2371,6 +2388,10 @@ video {
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pb-2 {
+  padding-bottom: 0.5rem;
 }
 
 .text-center {
@@ -3438,6 +3459,14 @@ input[type="number"] {
     margin-top: 52px;
   }
 
+  .sm\:mt-7 {
+    margin-top: 1.75rem;
+  }
+
+  .sm\:mt-5 {
+    margin-top: 1.25rem;
+  }
+
   .sm\:block {
     display: block;
   }
@@ -3554,6 +3583,10 @@ input[type="number"] {
     flex-direction: row;
   }
 
+  .sm\:justify-between {
+    justify-content: space-between;
+  }
+
   .sm\:gap-10 {
     gap: 2.5rem;
   }
@@ -3646,6 +3679,21 @@ input[type="number"] {
     padding-bottom: 1rem;
   }
 
+  .sm\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .sm\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .sm\:py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
   .sm\:pb-10 {
     padding-bottom: 2.5rem;
   }
@@ -3732,6 +3780,10 @@ input[type="number"] {
     right: 0.25rem;
   }
 
+  :is([dir="ltr"] .ltr\:sm\:left-5) {
+    left: 1.25rem;
+  }
+
   :is([dir="ltr"] .ltr\:sm\:-mr-\[21rem\]) {
     margin-right: -21rem;
   }
@@ -3742,6 +3794,10 @@ input[type="number"] {
 
   :is([dir="rtl"] .rtl\:sm\:-right-8) {
     right: -2rem;
+  }
+
+  :is([dir="rtl"] .rtl\:sm\:right-5) {
+    right: 1.25rem;
   }
 
   :is([dir="rtl"] .rtl\:sm\:-ml-\[21rem\]) {
@@ -3837,6 +3893,10 @@ input[type="number"] {
 
   .md\:h-\[354px\] {
     height: 354px;
+  }
+
+  .md\:h-96 {
+    height: 24rem;
   }
 
   .md\:w-32 {
@@ -4145,6 +4205,10 @@ input[type="number"] {
 
   .lg\:h-auto {
     height: auto;
+  }
+
+  .lg\:h-96 {
+    height: 24rem;
   }
 
   .lg\:w-11 {

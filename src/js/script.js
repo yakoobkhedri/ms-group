@@ -147,12 +147,25 @@ var customer = new Swiper(".customer", {
 var comments = new Swiper(".comments", {
   direction: "vertical",
   slidesPerView: 2,
-  spaceBetween: 110,
+  spaceBetween: 20,
+  loop:true,
+  autoplay: true,
+});
+var relatedProjects = new Swiper(".relatedProjects", {
+  slidesPerView: 1,
+  spaceBetween: 20,
   loop:true,
   autoplay: true,
   breakpoints: {
-    576: {
-      spaceBetween: 20,
+    768: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
     }
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
   },
 });
