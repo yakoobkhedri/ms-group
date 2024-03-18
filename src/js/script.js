@@ -169,3 +169,27 @@ var relatedProjects = new Swiper(".relatedProjects", {
     clickable: true,
   },
 });
+var steps = new Swiper(".steps", {
+  slidesPerView: 1,
+  spaceBetween: 57,
+  loop:true,
+  autoplay: true,
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    992: {
+      slidesPerView: 4,
+    },
+    1300: {
+      slidesPerView: 5,
+    }
+  },
+  pagination: {
+    el: ".swiper-pagination2",
+    clickable: true,
+  },
+});
