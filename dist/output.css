@@ -646,8 +646,16 @@ video {
   left: -5rem;
 }
 
+.-left-5 {
+  left: -1.25rem;
+}
+
 .-right-20 {
   right: -5rem;
+}
+
+.-right-5 {
+  right: -1.25rem;
 }
 
 .-right-\[19px\] {
@@ -938,12 +946,20 @@ video {
   top: 77px;
 }
 
-.-left-5 {
-  left: -1.25rem;
+.-bottom-\[6px\] {
+  bottom: -6px;
 }
 
-.-right-5 {
-  right: -1.25rem;
+.\!-bottom-\[6px\] {
+  bottom: -6px !important;
+}
+
+.-top-11 {
+  top: -2.75rem;
+}
+
+.-top-14 {
+  top: -3.5rem;
 }
 
 .-z-0 {
@@ -1019,11 +1035,6 @@ video {
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
-}
-
-.mx-16 {
-  margin-left: 4rem;
-  margin-right: 4rem;
 }
 
 .-mb-\[21px\] {
@@ -1206,6 +1217,10 @@ video {
   margin-top: 82px;
 }
 
+.mt-9 {
+  margin-top: 2.25rem;
+}
+
 .block {
   display: block;
 }
@@ -1298,6 +1313,10 @@ video {
   height: 2.25rem;
 }
 
+.h-96 {
+  height: 24rem;
+}
+
 .h-\[100px\] {
   height: 100px;
 }
@@ -1386,6 +1405,10 @@ video {
   height: 315px;
 }
 
+.h-\[316px\] {
+  height: 316px;
+}
+
 .h-\[350px\] {
   height: 350px;
 }
@@ -1462,12 +1485,20 @@ video {
   height: 100%;
 }
 
-.h-96 {
-  height: 24rem;
+.h-\[336px\] {
+  height: 336px;
 }
 
-.h-\[316px\] {
-  height: 316px;
+.h-\[377px\] {
+  height: 377px;
+}
+
+.h-\[371px\] {
+  height: 371px;
+}
+
+.h-\[411px\] {
+  height: 411px;
 }
 
 .\!w-2 {
@@ -1630,6 +1661,10 @@ video {
   width: 82%;
 }
 
+.w-\[84\%\] {
+  width: 84%;
+}
+
 .w-\[85\%\] {
   width: 85%;
 }
@@ -1644,6 +1679,10 @@ video {
 
 .w-\[88\%\] {
   width: 88%;
+}
+
+.w-\[90\%\] {
+  width: 90%;
 }
 
 .w-\[90px\] {
@@ -1676,14 +1715,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[90\%\] {
-  width: 90%;
-}
-
-.w-\[84\%\] {
-  width: 84%;
 }
 
 .max-w-\[1536px\] {
@@ -1898,6 +1929,10 @@ video {
 
 .gap-y-8 {
   row-gap: 2rem;
+}
+
+.gap-y-11 {
+  row-gap: 2.75rem;
 }
 
 .overflow-auto {
@@ -2452,6 +2487,14 @@ video {
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
+
+.pt-3 {
+  padding-top: 0.75rem;
 }
 
 .text-center {
@@ -4172,6 +4215,10 @@ input[type="number"] {
 
   .lg\:top-\[6px\] {
     top: 6px;
+  }
+
+  .lg\:-top-3 {
+    top: -0.75rem;
   }
 
   .lg\:-z-0 {
