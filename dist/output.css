@@ -610,6 +610,10 @@ video {
   bottom: -0.5rem !important;
 }
 
+.\!-bottom-\[6px\] {
+  bottom: -6px !important;
+}
+
 .\!bottom-0 {
   bottom: 0px !important;
 }
@@ -946,22 +950,6 @@ video {
   top: 77px;
 }
 
-.-bottom-\[6px\] {
-  bottom: -6px;
-}
-
-.\!-bottom-\[6px\] {
-  bottom: -6px !important;
-}
-
-.-top-11 {
-  top: -2.75rem;
-}
-
-.-top-14 {
-  top: -3.5rem;
-}
-
 .-z-0 {
   z-index: 0;
 }
@@ -1193,6 +1181,10 @@ video {
   margin-top: 2rem;
 }
 
+.mt-9 {
+  margin-top: 2.25rem;
+}
+
 .mt-\[10px\] {
   margin-top: 10px;
 }
@@ -1217,10 +1209,6 @@ video {
   margin-top: 82px;
 }
 
-.mt-9 {
-  margin-top: 2.25rem;
-}
-
 .block {
   display: block;
 }
@@ -1235,6 +1223,10 @@ video {
 
 .hidden {
   display: none;
+}
+
+.aspect-\[7\/5\] {
+  aspect-ratio: 7/5;
 }
 
 .h-0 {
@@ -1405,10 +1397,6 @@ video {
   height: 315px;
 }
 
-.h-\[316px\] {
-  height: 316px;
-}
-
 .h-\[350px\] {
   height: 350px;
 }
@@ -1417,8 +1405,16 @@ video {
   height: 360px;
 }
 
+.h-\[371px\] {
+  height: 371px;
+}
+
 .h-\[400px\] {
   height: 400px;
+}
+
+.h-\[411px\] {
+  height: 411px;
 }
 
 .h-\[412px\] {
@@ -1483,22 +1479,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-\[336px\] {
-  height: 336px;
-}
-
-.h-\[377px\] {
-  height: 377px;
-}
-
-.h-\[371px\] {
-  height: 371px;
-}
-
-.h-\[411px\] {
-  height: 411px;
 }
 
 .\!w-2 {
@@ -1929,10 +1909,6 @@ video {
 
 .gap-y-8 {
   row-gap: 2rem;
-}
-
-.gap-y-11 {
-  row-gap: 2.75rem;
 }
 
 .overflow-auto {
@@ -2409,8 +2385,8 @@ video {
   padding-bottom: 4rem;
 }
 
-.pb-4 {
-  padding-bottom: 1rem;
+.pb-3 {
+  padding-bottom: 0.75rem;
 }
 
 .pb-5 {
@@ -2469,8 +2445,8 @@ video {
   padding-top: 0.5rem;
 }
 
-.pt-4 {
-  padding-top: 1rem;
+.pt-3 {
+  padding-top: 0.75rem;
 }
 
 .pt-5 {
@@ -2487,14 +2463,6 @@ video {
 
 .pt-8 {
   padding-top: 2rem;
-}
-
-.pb-3 {
-  padding-bottom: 0.75rem;
-}
-
-.pt-3 {
-  padding-top: 0.75rem;
 }
 
 .text-center {
@@ -4185,6 +4153,10 @@ input[type="number"] {
     top: -3rem;
   }
 
+  .lg\:-top-3 {
+    top: -0.75rem;
+  }
+
   .lg\:-top-\[13px\] {
     top: -13px;
   }
@@ -4215,10 +4187,6 @@ input[type="number"] {
 
   .lg\:top-\[6px\] {
     top: 6px;
-  }
-
-  .lg\:-top-3 {
-    top: -0.75rem;
   }
 
   .lg\:-z-0 {
