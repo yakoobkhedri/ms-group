@@ -638,6 +638,10 @@ video {
   bottom: -29px;
 }
 
+.-bottom-\[347px\] {
+  bottom: -347px;
+}
+
 .-bottom-\[61px\] {
   bottom: -61px;
 }
@@ -798,6 +802,10 @@ video {
   bottom: 0px;
 }
 
+.bottom-28 {
+  bottom: 7rem;
+}
+
 .bottom-4 {
   bottom: 1rem;
 }
@@ -946,32 +954,32 @@ video {
   top: 6px;
 }
 
-.top-\[77px\] {
-  top: 77px;
-}
-
-.top-16 {
-  top: 4rem;
-}
-
-.top-20 {
-  top: 5rem;
-}
-
 .top-\[70px\] {
   top: 70px;
 }
 
-.bottom-28 {
-  bottom: 7rem;
+.top-\[77px\] {
+  top: 77px;
 }
 
-.-bottom-\[-347px\] {
-  bottom: 347px;
+.-top-\[53px\] {
+  top: -53px;
 }
 
-.-bottom-\[347px\] {
-  bottom: -347px;
+.-top-\[29px\] {
+  top: -29px;
+}
+
+.-top-\[50px\] {
+  top: -50px;
+}
+
+.-top-\[52px\] {
+  top: -52px;
+}
+
+.-top-\[34px\] {
+  top: -34px;
 }
 
 .-z-0 {
@@ -1205,10 +1213,6 @@ video {
   margin-top: 2rem;
 }
 
-.mt-9 {
-  margin-top: 2.25rem;
-}
-
 .mt-\[10px\] {
   margin-top: 10px;
 }
@@ -1427,10 +1431,6 @@ video {
 
 .h-\[360px\] {
   height: 360px;
-}
-
-.h-\[371px\] {
-  height: 371px;
 }
 
 .h-\[400px\] {
@@ -3415,6 +3415,10 @@ input[type="number"] {
   padding-right: 3rem;
 }
 
+:is([dir="rtl"] .rtl\:pr-5) {
+  padding-right: 1.25rem;
+}
+
 :is([dir="rtl"] .rtl\:font-kalamehBlack) {
   font-family: kalameh-black;
 }
@@ -3503,6 +3507,18 @@ input[type="number"] {
 
   .sm\:right-7 {
     right: 1.75rem;
+  }
+
+  .sm\:top-3 {
+    top: 0.75rem;
+  }
+
+  .sm\:top-0 {
+    top: 0px;
+  }
+
+  .sm\:-top-8 {
+    top: -2rem;
   }
 
   .sm\:mx-0 {
@@ -3945,6 +3961,14 @@ input[type="number"] {
     right: 2.75rem;
   }
 
+  .md\:top-0 {
+    top: 0px;
+  }
+
+  .md\:-top-8 {
+    top: -2rem;
+  }
+
   .md\:-z-0 {
     z-index: 0;
   }
@@ -3982,20 +4006,24 @@ input[type="number"] {
     margin-right: auto;
   }
 
+  .md\:mt-2 {
+    margin-top: 0.5rem;
+  }
+
   .md\:mt-24 {
     margin-top: 6rem;
+  }
+
+  .md\:mt-3 {
+    margin-top: 0.75rem;
   }
 
   .md\:mt-9 {
     margin-top: 2.25rem;
   }
 
-  .md\:mt-2 {
-    margin-top: 0.5rem;
-  }
-
-  .md\:mt-3 {
-    margin-top: 0.75rem;
+  .md\:mt-28 {
+    margin-top: 7rem;
   }
 
   .md\:block {
@@ -4104,6 +4132,11 @@ input[type="number"] {
     padding-right: 2.5rem;
   }
 
+  .md\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
   .md\:pl-5 {
     padding-left: 1.25rem;
   }
@@ -4205,6 +4238,14 @@ input[type="number"] {
     bottom: 0px;
   }
 
+  .lg\:bottom-8 {
+    bottom: 2rem;
+  }
+
+  .lg\:left-10 {
+    left: 2.5rem;
+  }
+
   .lg\:right-0 {
     right: 0px;
   }
@@ -4219,14 +4260,6 @@ input[type="number"] {
 
   .lg\:top-\[6px\] {
     top: 6px;
-  }
-
-  .lg\:bottom-8 {
-    bottom: 2rem;
-  }
-
-  .lg\:left-10 {
-    left: 2.5rem;
   }
 
   .lg\:-z-0 {
@@ -4330,6 +4363,10 @@ input[type="number"] {
     height: 247px;
   }
 
+  .lg\:h-\[371px\] {
+    height: 371px;
+  }
+
   .lg\:h-\[416px\] {
     height: 416px;
   }
@@ -4348,10 +4385,6 @@ input[type="number"] {
 
   .lg\:h-auto {
     height: auto;
-  }
-
-  .lg\:h-\[371px\] {
-    height: 371px;
   }
 
   .lg\:w-11 {
@@ -4584,12 +4617,12 @@ input[type="number"] {
     left: 2rem;
   }
 
-  :is([dir="ltr"] .ltr\:lg\:right-auto) {
-    right: auto;
-  }
-
   :is([dir="ltr"] .ltr\:lg\:right-10) {
     right: 2.5rem;
+  }
+
+  :is([dir="ltr"] .ltr\:lg\:right-auto) {
+    right: auto;
   }
 
   :is([dir="ltr"] .ltr\:lg\:-ml-\[84px\]) {
