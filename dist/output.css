@@ -950,6 +950,30 @@ video {
   top: 77px;
 }
 
+.top-16 {
+  top: 4rem;
+}
+
+.top-20 {
+  top: 5rem;
+}
+
+.top-\[70px\] {
+  top: 70px;
+}
+
+.bottom-28 {
+  bottom: 7rem;
+}
+
+.-bottom-\[-347px\] {
+  bottom: 347px;
+}
+
+.-bottom-\[347px\] {
+  bottom: -347px;
+}
+
 .-z-0 {
   z-index: 0;
 }
@@ -3966,6 +3990,14 @@ input[type="number"] {
     margin-top: 2.25rem;
   }
 
+  .md\:mt-2 {
+    margin-top: 0.5rem;
+  }
+
+  .md\:mt-3 {
+    margin-top: 0.75rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -4189,6 +4221,14 @@ input[type="number"] {
     top: 6px;
   }
 
+  .lg\:bottom-8 {
+    bottom: 2rem;
+  }
+
+  .lg\:left-10 {
+    left: 2.5rem;
+  }
+
   .lg\:-z-0 {
     z-index: 0;
   }
@@ -4308,6 +4348,10 @@ input[type="number"] {
 
   .lg\:h-auto {
     height: auto;
+  }
+
+  .lg\:h-\[371px\] {
+    height: 371px;
   }
 
   .lg\:w-11 {
@@ -4542,6 +4586,10 @@ input[type="number"] {
 
   :is([dir="ltr"] .ltr\:lg\:right-auto) {
     right: auto;
+  }
+
+  :is([dir="ltr"] .ltr\:lg\:right-10) {
+    right: 2.5rem;
   }
 
   :is([dir="ltr"] .ltr\:lg\:-ml-\[84px\]) {

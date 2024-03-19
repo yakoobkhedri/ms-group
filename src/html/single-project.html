@@ -505,7 +505,7 @@
             <img alt="shape" src="../img/Group (12).png"
                 class="absolute  ltr:right-0 ltr:left-auto ltr:[transform:rotateY(180deg)] left-0 top-[268px] -z-0 hidden md:block">
             <img alt="shape" src="../img/Vector 65.png"
-                class="absolute mx-auto hidden ltr:[transform:rotateY(180deg)] ltr:-left-20 rtl:-right-20 inset-x-0 md:block -z-0">
+                class="absolute mx-auto hidden ltr:[transform:rotateY(180deg)] -bottom-[347px] ltr:-left-20 rtl:-right-20 inset-x-0 md:block -z-0">
             <!--  -->
             <div
                 class="max-w-content bg-[#f0f0f0] lg:bg-transparent rounded-[15px] sm:rounded-[30px] mx-auto p-4 sm:p-7 sm:pt-0 relative">
@@ -538,12 +538,12 @@
                 <!-- grid -->
                 <div class="grid grid-cols-12 items-end gap-y-8 lg:gap-14 lg:mt-7">
                     <div class="lg:col-span-8 col-span-12 order-last lg:order-first">
-                        <div class="relative lg:-top-3 mt-9 lg:mt-0">
+                        <div class="relative lg:-top-3">
                             <!-- shape -->
-                              <div class="bg-white rounded-[30px] -top-20 m-auto inset-0 -z-0 h-96 w-[84%] absolute"></div>
-                              <div class="bg-white rounded-[30px] -top-3 shadow-2 m-auto inset-0 -z-0 h-[411px] w-[90%] absolute"></div>
+                              <div class="bg-white hidden lg:block rounded-[30px] -top-20 m-auto inset-0 -z-0 h-96 w-[84%] absolute"></div>
+                              <div class="bg-white hidden lg:block rounded-[30px] -top-3 shadow-2 m-auto inset-0 -z-0 h-[411px] w-[90%] absolute"></div>
                             <!--  -->
-                            <div class="swiper banner h-[371px] pb-8">
+                            <div class="swiper banner lg:h-[371px] pb-8">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <img alt="img" src="../img/Rectangle 42 (2).png"
@@ -582,10 +582,13 @@
                         <div class="rounded-[15px] sm:rounded-[30px] bg-white p-4 relative">
                             <div class="relative shadow-2 rounded-[15px] sm:rounded-[30px] overflow-hidden">
                                 <!-- play icon -->
-                                <svg id="player-button" class="absolute inset-0 m-auto cursor-pointer z-10" width="61" height="61" viewBox="0 0 61 61" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M30.4999 55.9168C44.5375 55.9168 55.9166 44.5378 55.9166 30.5002C55.9166 16.4625 44.5375 5.0835 30.4999 5.0835C16.4623 5.0835 5.08325 16.4625 5.08325 30.5002C5.08325 44.5378 16.4623 55.9168 30.4999 55.9168Z" fill="white"></path>
-                                  <path d="M39.1772 33.1917L27.1806 40.2753C25.2489 41.4139 22.875 39.9296 22.875 37.5811V23.4189C22.875 21.0704 25.2489 19.5887 27.1806 20.7273L39.1772 27.8109C41.1623 28.9852 41.1623 32.0199 39.1772 33.1942" fill="white"></path>
-                                </svg>
+                                <div>
+                                    <svg id="player-button" class="cursor-pointer absolute inset-0 m-auto" width="61" height="61" viewBox="0 0 61 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M30.4999 55.9168C44.5375 55.9168 55.9166 44.5378 55.9166 30.5002C55.9166 16.4625 44.5375 5.0835 30.4999 5.0835C16.4623 5.0835 5.08325 16.4625 5.08325 30.5002C5.08325 44.5378 16.4623 55.9168 30.4999 55.9168Z" fill="white"></path>
+                                        <path d="M39.1772 33.1917L27.1806 40.2753C25.2489 41.4139 22.875 39.9296 22.875 37.5811V23.4189C22.875 21.0704 25.2489 19.5887 27.1806 20.7273L39.1772 27.8109C41.1623 28.9852 41.1623 32.0199 39.1772 33.1942" fill="white"></path>
+                                      </svg>
+                                      <p class="absolute inset-0 m-auto z-10 h-3 top-[70px] text-center text-white opacity-50">ویدیو پروژه</p>
+                                </div>
                                 <!--  -->
                                 <video src="../img//64ad88885b273.mp4" class="rounded-26 aspect-[7/5] object-cover w-full block" poster="../img/Rectangle 30.png" id="player-video"></video>
                             </div>
@@ -678,7 +681,7 @@
         </section>
 
         <!-- steps -->
-        <section class="relative mt-28 px-5">
+        <section class="relative mt-28 px-5 z-2">
             <div class="max-w-content mx-auto">
                 <div
                     class="bg-white sm:h-[367px] relative rounded-[15px] sm:rounded-[30px] shadow-2 p-5 xl:pb-4 xl:p-16 xl:pt-8">
