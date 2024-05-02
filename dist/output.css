@@ -686,6 +686,10 @@ video {
   top: -2.5rem;
 }
 
+.-top-14 {
+  top: -3.5rem;
+}
+
 .-top-16 {
   top: -4rem;
 }
@@ -724,6 +728,10 @@ video {
 
 .-top-52 {
   top: -13rem;
+}
+
+.-top-6 {
+  top: -1.5rem;
 }
 
 .-top-64 {
@@ -804,6 +812,10 @@ video {
 
 .-top-\[54px\] {
   top: -54px;
+}
+
+.-top-\[55px\] {
+  top: -55px;
 }
 
 .-top-\[59px\] {
@@ -976,26 +988,6 @@ video {
 
 .top-\[77px\] {
   top: 77px;
-}
-
-.-top-\[55px\] {
-  top: -55px;
-}
-
-.-top-11 {
-  top: -2.75rem;
-}
-
-.-top-12 {
-  top: -3rem;
-}
-
-.-top-14 {
-  top: -3.5rem;
-}
-
-.-top-6 {
-  top: -1.5rem;
 }
 
 .-z-0 {
@@ -1357,6 +1349,10 @@ video {
   height: 100px;
 }
 
+.h-\[102\%\] {
+  height: 102%;
+}
+
 .h-\[103\%\] {
   height: 103%;
 }
@@ -1513,16 +1509,8 @@ video {
   height: 964px;
 }
 
-.h-\[97\%\] {
-  height: 97%;
-}
-
 .h-full {
   height: 100%;
-}
-
-.h-\[102\%\] {
-  height: 102%;
 }
 
 .\!w-2 {
@@ -2238,6 +2226,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-yasi {
+  --tw-bg-opacity: 1;
+  background-color: rgb(216 201 246 / var(--tw-bg-opacity));
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -2442,10 +2435,6 @@ video {
   padding-bottom: 1.25rem;
 }
 
-.pb-6 {
-  padding-bottom: 1.5rem;
-}
-
 .pb-7 {
   padding-bottom: 1.75rem;
 }
@@ -2516,10 +2505,6 @@ video {
 
 .text-center {
   text-align: center;
-}
-
-.font-kalamehBlack {
-  font-family: kalameh-black;
 }
 
 .font-yekanBakhRegular {
@@ -3839,16 +3824,16 @@ input[type="number"] {
     padding-bottom: 2.5rem;
   }
 
+  .sm\:pb-6 {
+    padding-bottom: 1.5rem;
+  }
+
   .sm\:pb-\[71px\] {
     padding-bottom: 71px;
   }
 
   .sm\:pt-0 {
     padding-top: 0px;
-  }
-
-  .sm\:pb-6 {
-    padding-bottom: 1.5rem;
   }
 
   .sm\:text-right {
@@ -3955,6 +3940,10 @@ input[type="number"] {
 }
 
 @media (min-width: 768px) {
+  .md\:-top-11 {
+    top: -2.75rem;
+  }
+
   .md\:-top-12 {
     top: -3rem;
   }
@@ -3989,10 +3978,6 @@ input[type="number"] {
 
   .md\:top-0 {
     top: 0px;
-  }
-
-  .md\:-top-11 {
-    top: -2.75rem;
   }
 
   .md\:-z-0 {
