@@ -1245,6 +1245,10 @@ video {
   margin-top: 82px;
 }
 
+.mt-16 {
+  margin-top: 4rem;
+}
+
 .block {
   display: block;
 }
@@ -1511,6 +1515,10 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-72 {
+  height: 18rem;
 }
 
 .\!w-2 {
@@ -2809,6 +2817,14 @@ header ul li.active::after,header ul li.active{
 
 header ul li.active::after{
   bottom: -12px;
+}
+
+.trapezoid {
+  border-bottom: 35px solid white;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  height: 0;
+  width: 170px;
 }
 
 .shadow-1{
@@ -4576,6 +4592,14 @@ input[type="number"] {
 
   .lg\:pt-32 {
     padding-top: 8rem;
+  }
+
+  .lg\:pb-\[104px\] {
+    padding-bottom: 104px;
+  }
+
+  .lg\:pb-20 {
+    padding-bottom: 5rem;
   }
 
   .lg\:text-right {
