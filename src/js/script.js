@@ -96,6 +96,19 @@ var banner3 = new Swiper(".banner3", {
     prevEl: ".swiper-button-prev",
   },
 });
+var banner4 = new Swiper(".banner4", {
+  slidesPerView: 1,
+  spaceBetween: 5,
+  loop:true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 var services = new Swiper(".services", {
   slidesPerView: 1.3,
   loop:true,
