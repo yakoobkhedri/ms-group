@@ -53,6 +53,9 @@ a {
 .transition {
   @apply transition-all duration-300;
 }
+.dashboardHeader.active{
+  @apply z-2;
+}
 header ul li.active::after,header ul li.active{
   opacity: 100%;
 }
@@ -155,6 +158,44 @@ input[type="number"] {
 }
 .dropdown.actie{
   display: grid!important;
+}
+
+/* tab */
+.tabs p.active{
+  color: #643394;
+}
+.tabContent > div{
+  display: none;
+  animation: in 1s;
+  transform-origin: top left;
+}
+.tabContent > div.active{
+  display: block;
+}
+
+@keyframes in {
+  0% {
+      opacity: 0;
+      transform: rotateX(-90deg)
+  }
+  100% {
+      opacity: 1;
+      transform: rotateX(0deg)
+  }
+}
+/* sidebar */
+.sidebar.active{
+  @apply rtl:right-0 ltr:left-0;
+}
+.sidebar ul li a.active{
+  color: white;
+}
+.sidebar ul li a.active img:first-child{
+  @apply opacity-100 visible rtl:-right-6 ltr:-left-6
+}
+.sidebar ul li a.active svg path{
+  fill: white;
+  stroke: white;
 }
 /* swiper */
 
