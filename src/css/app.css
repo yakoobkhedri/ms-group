@@ -197,6 +197,23 @@ input[type="number"] {
   fill: white;
   stroke: white;
 }
+/* select 2 */
+.select2-container {
+  max-width: 340px !important;
+  width: 100% !important;
+}
+.select2-container .select2-selection--single {
+  height: 38px !important;
+}
+.select2-container .select2-selection--single .select2-selection__rendered {
+  height: 100% !important;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  top: 7px!important;
+}
+.select2-selection--single .select2-selection__rendered{
+  padding-top: 4px!important;
+}
 /* swiper */
 
 .swiper-pagination-bullet-active {
@@ -253,7 +270,12 @@ input[type="number"] {
     left: 100%;
   }
 }
-
+@media only screen and (max-width: 640px) {
+  .select2-container {
+    max-width: 100%  !important;
+    width: 100% !important;
+  }
+}
 @media only screen and (max-width: 400px) {
 
   .customer .swiper-pagination-bullet{
