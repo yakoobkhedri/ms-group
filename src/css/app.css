@@ -39,6 +39,20 @@ body {
 a {
   cursor: pointer;
 }
+.text-nowrap{
+  text-wrap: nowrap;
+}
+.flex-center {
+  @apply flex items-center justify-center;
+}
+
+.flex-between {
+  @apply flex items-center justify-between;
+}
+
+.transition {
+  @apply transition-all duration-300;
+}
 header ul li.active::after,header ul li.active{
   opacity: 100%;
 }
