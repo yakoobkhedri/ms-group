@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     inputBox.addEventListener("keydown", (event) => {
         if (event.key === "Enter" && inputBox.value.trim() !== "") {
+            event.preventDefault();
             const text = inputBox.value.trim();
             items.push(text);
             inputBox.value = "";
