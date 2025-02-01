@@ -197,6 +197,11 @@ input[type="number"] {
   fill: white;
   stroke: white;
 }
+/* checkbox */
+.checkbox.active {
+  opacity: 1;
+  background-color: #643394;
+}
 /* select 2 */
 .select2-container {
   max-width: 340px !important;

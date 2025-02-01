@@ -126,7 +126,7 @@
             <div class="inline-flex items-center gap-[10px]">
               <label class="relative flex items-center p-1 rounded-full cursor-pointer" htmlfor="black">
                 <input name="yes" type="checkbox"
-                  class="before:content[''] bg-[#E7E7E7] peer relative h-6 w-6 cursor-pointer appearance-none overflow-hidden rounded-[5px] text-[#ECECEC] transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-[#ECECEC] before:opacity-0 before:transition-opacity checked:border-orange checked:before:bg-orange hover:before:opacity-10"
+                  class="before:content[''] bg-[#E7E7E7] peer relative h-6 w-6 cursor-pointer appearance-none overflow-hidden rounded-[5px] text-[#ECECEC] transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-[#ECECEC] before:opacity-0 before:transition-opacity checked:border-purple checked:before:bg-purple hover:before:opacity-10"
                   id="black">
                 <span
                   class="absolute text-purple transition-opacity opacity-0 pointer-events-none rounded-[5px] top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
@@ -1440,6 +1440,56 @@
                     <option>tailwind</option>
                     <option>react</option>
                   </select>
+                </div>
+              </div>
+              <div class="grid grid-cols-12 items-center gap-2 sm:gap-5 mb-3">
+                <label class="sm:col-span-3 col-span-12">جنسیت: <span class="text-red-600">*</span></label>
+                <div class="sm:col-span-9 col-span-12">
+                  <div class="flex items-center gap-5">
+                    <label class="flex items-center gap-2 cursor-pointer">
+                        <div class="inline-flex items-center">
+                            <label class="relative flex items-center p-1 rounded-full cursor-pointer" htmlfor="black">
+                              <input name="gender" type="radio" class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-[#aaa] text-[#ECECEC] transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-[#ECECEC] before:opacity-0 before:transition-opacity checked:border-purple checked:before:bg-purple hover:before:opacity-10" id="black">
+                              <span class="absolute text-purple transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 16 16" fill="currentColor">
+                                  <circle data-name="ellipse" cx="8" cy="8" r="8"></circle>
+                                </svg>
+                              </span>
+                            </label>
+                          </div>
+                        <p class="text-sm opacity-50">مرد</p>
+                    </label>
+                    <label class="flex items-center gap-2 cursor-pointer">
+                        <div class="inline-flex items-center">
+                            <label class="relative flex items-center p-1 rounded-full cursor-pointer" htmlfor="black">
+                              <input name="gender" type="radio" class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-[#aaa] text-[#ECECEC] transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-[#ECECEC] before:opacity-0 before:transition-opacity checked:border-purple checked:before:bg-purple hover:before:opacity-10" id="black">
+                              <span class="absolute text-purple transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 16 16" fill="currentColor">
+                                  <circle data-name="ellipse" cx="8" cy="8" r="8"></circle>
+                                </svg>
+                              </span>
+                            </label>
+                          </div>
+                        <p class="text-sm opacity-50">زن</p>
+                    </label>
+                </div>
+                </div>
+              </div>
+              <div class="grid grid-cols-12 items-center gap-2 sm:gap-5 mb-3">
+                <label class="sm:col-span-3 col-span-12">ارسال خبرنامه: <span class="text-red-600">*</span></label>
+                <div class="sm:col-span-9 col-span-12">
+                  <div class="flex items-center justify-between checkboxRow cursor-pointer">
+                    <div class="flex items-center gap-2">
+                      <div class="w-5 h-5 transition-all duration-200 flex items-center justify-center rounded-[7px] overflow-hidden cursor-pointer border border-[#aaa] relative checkbox active">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check text-white" viewBox="0 0 16 16">
+                          <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z">
+                          </path>
+                        </svg>
+                        <input type="checkbox" class="absolute inset-0 opacity-0 w-full h-full cursor-pointer z-10">
+                      </div>
+                      <p class="text-sm opacity-50">بله</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </form>

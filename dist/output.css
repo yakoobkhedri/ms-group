@@ -1441,6 +1441,10 @@ video {
   height: 0.75rem;
 }
 
+.h-3\.5 {
+  height: 0.875rem;
+}
+
 .h-32 {
   height: 8rem;
 }
@@ -1765,6 +1769,14 @@ video {
   width: 6rem;
 }
 
+.w-3 {
+  width: 0.75rem;
+}
+
+.w-3\.5 {
+  width: 0.875rem;
+}
+
 .w-32 {
   width: 8rem;
 }
@@ -1981,8 +1993,8 @@ video {
   max-width: 280px;
 }
 
-.max-w-\[338px\] {
-  max-width: 338px;
+.max-w-\[340px\] {
+  max-width: 340px;
 }
 
 .max-w-\[360px\] {
@@ -2011,10 +2023,6 @@ video {
 
 .max-w-full {
   max-width: 100%;
-}
-
-.max-w-\[340px\] {
-  max-width: 340px;
 }
 
 .flex-shrink-0 {
@@ -2317,6 +2325,10 @@ video {
 
 .rounded-\[5px\] {
   border-radius: 5px;
+}
+
+.rounded-\[7px\] {
+  border-radius: 7px;
 }
 
 .rounded-\[9px\] {
@@ -3260,6 +3272,10 @@ video {
   transition-duration: 150ms;
 }
 
+.duration-200 {
+  transition-duration: 200ms;
+}
+
 .\[transform\:rotateY\(180deg\)\] {
   transform: rotateY(180deg);
 }
@@ -3530,6 +3546,13 @@ input[type="number"] {
   stroke: white;
 }
 
+/* checkbox */
+
+.checkbox.active {
+  opacity: 1;
+  background-color: #643394;
+}
+
 /* select 2 */
 
 .select2-container {
@@ -3716,6 +3739,17 @@ input[type="number"] {
 .after\:content-none::after {
   --tw-content: none;
   content: var(--tw-content);
+}
+
+.checked\:border-purple:checked {
+  --tw-border-opacity: 1;
+  border-color: rgb(100 51 148 / var(--tw-border-opacity));
+}
+
+.checked\:before\:bg-purple:checked::before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 51 148 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-\[\#DAD1FF\]:hover {
