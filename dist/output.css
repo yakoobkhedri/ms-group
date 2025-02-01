@@ -1713,6 +1713,10 @@ video {
   height: 100vh;
 }
 
+.min-h-\[60px\] {
+  min-height: 60px;
+}
+
 .\!w-2 {
   width: 0.5rem !important;
 }
@@ -2633,6 +2637,11 @@ video {
   background-color: rgb(246 171 54 / var(--tw-bg-opacity));
 }
 
+.bg-green-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(134 239 172 / var(--tw-bg-opacity));
+}
+
 .bg-pink {
   --tw-bg-opacity: 1;
   background-color: rgb(255 230 226 / var(--tw-bg-opacity));
@@ -2655,6 +2664,10 @@ video {
 .bg-yasi {
   --tw-bg-opacity: 1;
   background-color: rgb(216 201 246 / var(--tw-bg-opacity));
+}
+
+.fill-purple {
+  fill: #643394;
 }
 
 .object-cover {
@@ -3164,6 +3177,11 @@ video {
   color: rgb(246 171 54 / var(--tw-text-opacity));
 }
 
+.text-green-800 {
+  --tw-text-opacity: 1;
+  color: rgb(22 101 52 / var(--tw-text-opacity));
+}
+
 .text-purple {
   --tw-text-opacity: 1;
   color: rgb(100 51 148 / var(--tw-text-opacity));
@@ -3576,6 +3594,57 @@ input[type="number"] {
   padding-top: 4px!important;
 }
 
+#inputBox {
+  max-width: 0;
+  transition: all .4s;
+  padding-right: 0;
+  padding-left: 0;
+  border: 0;
+}
+
+#inputBox.active {
+  max-width: 100%;
+  padding-right: 8px;
+  padding-left: 8px;
+  border: 1px solid #aaa;
+}
+
+.card {
+  background-color: lightgray;
+  border-radius: 6px;
+  padding: 5px 10px;
+  color: rgb(94, 94, 94);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all .4s;
+  gap: 16px;
+  flex-grow: 1;
+}
+
+.card button.close {
+  color: white;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 100%;
+  flex-shrink: 0;
+  font-size: 12px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .4s;
+}
+
+.card:hover{
+  background-color: pink;
+}
+
+.card:hover button.close{
+  opacity: 100%;
+  visibility: visible;
+}
+
 /* swiper */
 
 .swiper-pagination-bullet-active {
@@ -3755,6 +3824,11 @@ input[type="number"] {
 .hover\:bg-\[\#DAD1FF\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(218 209 255 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-green-700:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(21 128 61 / var(--tw-bg-opacity));
 }
 
 .hover\:font-bold:hover {
