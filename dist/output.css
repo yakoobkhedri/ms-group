@@ -3635,6 +3635,31 @@ input[type="number"] {
   outline-offset: 2px;
 }
 
+#inputContainer{
+  visibility: hidden;
+  opacity: 0;
+  width: 0;
+  transition: all .4s;
+}
+
+#inputContainer.activeInput{
+  visibility: visible;
+  opacity: 100%;
+  width: auto;
+}
+
+#inputContainer input {
+  height: 38px;
+  border-radius: 4px;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(170 170 170 / var(--tw-border-opacity));
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
 .card {
   background-color: lightgray;
   border-radius: 6px;
@@ -3649,26 +3674,16 @@ input[type="number"] {
   flex-grow: 1;
 }
 
-.card button.close {
-  color: white;
-  width: 20px;
-  height: 20px;
-  background-color: red;
-  border-radius: 100%;
+span.close {
+  color: red;
   flex-shrink: 0;
   font-size: 12px;
-  opacity: 0;
-  visibility: hidden;
   transition: all .4s;
+  cursor: pointer;
 }
 
 .card:hover{
   background-color: pink;
-}
-
-.card:hover button.close{
-  opacity: 100%;
-  visibility: visible;
 }
 
 /* swiper */

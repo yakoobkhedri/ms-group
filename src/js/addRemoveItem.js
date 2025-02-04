@@ -1,57 +1,43 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const addButtons = document.querySelectorAll(".addButton");
-    const cardContainers = document.querySelectorAll(".cardContainer");
-    let itemsArray = Array.from({ length: addButtons.length }, () => []);
-    let activeInputBox = null;
+document.addEventListener('DOMContentLoaded', function() {
+    const addBtn = document.getElementById('addBtn');
+    const inputContainer = document.getElementById('inputContainer');
+    const cardInput = document.getElementById('cardInput');
+    const cardsContainer = document.getElementById('cardsContainer');
 
-    addButtons.forEach((button, btnIndex) => {
-        button.addEventListener("click", () => {
-            if (activeInputBox && activeInputBox.value.trim() !== "") {
-                return;
-            }
-            if (activeInputBox) {
-                activeInputBox.remove();
-            }
-            
-            let inputBox = document.createElement("input");
-            inputBox.type = "text";
-            inputBox.classList.add("inputBox");
-            inputBox.setAttribute("required", "true");
-            cardContainers[btnIndex].parentNode.insertBefore(inputBox, cardContainers[btnIndex]);
-            inputBox.focus();
-            activeInputBox = inputBox;
-
-            inputBox.addEventListener("keydown", (event) => {
-                if (event.key === "Enter" && inputBox.value.trim() !== "") {
-                    const text = inputBox.value.trim();
-                    itemsArray[btnIndex].push(text);
-                    inputBox.remove();
-                    activeInputBox = null;
-                    updateCards(btnIndex);
-                }
-            });
-        });
+    // نمایش اینپوت وقتی دکمه + کلیک می‌شود
+    addBtn.addEventListener('click', function() {
+        inputContainer.classList.add('activeInput');
+        cardInput.focus(); // فوکوس خودکار روی اینپوت
     });
 
-    function updateCards(index) {
-        cardContainers[index].innerHTML = "";
-        itemsArray[index].forEach((item, itemIndex) => {
-            const card = document.createElement("div");
-            card.classList.add("card");
-            card.innerHTML = `<span>${item}</span> <button class="close" data-index="${itemIndex}" data-btnindex="${index}">X</button>`;
-            cardContainers[index].appendChild(card);
-        });
-        attachCloseEvents();
-    }
+    // اضافه کردن کارت با فشردن کلید Enter
+    cardInput.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+            event.preventDefault();
+            const text = cardInput.value.trim();
+            if (text) {
+                addCard(text);
+                cardInput.value = ''; // پاک کردن اینپوت
+                inputContainer.classList.remove('activeInput'); // مخفی کردن اینپوت
+            }
+        }
+    });
 
-    function attachCloseEvents() {
-        document.querySelectorAll(".close").forEach(button => {
-            button.addEventListener("click", (event) => {
-                const itemIndex = event.target.getAttribute("data-index");
-                const btnIndex = event.target.getAttribute("data-btnindex");
-                itemsArray[btnIndex].splice(itemIndex, 1);
-                updateCards(btnIndex);
-            });
+    // تابع برای اضافه کردن کارت
+    function addCard(text) {
+        const card = document.createElement('div');
+        card.className = 'card';
+        card.textContent = text;
+
+        // دکمه حذف کارت
+        const closeBtn = document.createElement('span');
+        closeBtn.className = 'close';
+        closeBtn.textContent = '×';
+        closeBtn.addEventListener('click', function() {
+            cardsContainer.removeChild(card);
         });
+
+        card.appendChild(closeBtn);
+        cardsContainer.appendChild(card);
     }
 });

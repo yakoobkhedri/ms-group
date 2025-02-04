@@ -229,6 +229,20 @@ input[type="number"] {
   transition: all .4s;
   @apply border border-[#aaa] rounded-[4px] outline-none px-2 h-9;
 }
+#inputContainer{
+  visibility: hidden;
+  opacity: 0;
+  width: 0;
+  transition: all .4s;
+}
+#inputContainer.activeInput{
+  visibility: visible;
+  opacity: 100%;
+  width: auto;
+}
+#inputContainer input{
+  @apply h-[38px] border border-[#aaa] rounded-[4px] outline-none px-2;
+}
 .card {
   background-color: lightgray;
   border-radius: 6px;
@@ -242,24 +256,15 @@ input[type="number"] {
   gap: 16px;
   flex-grow: 1;
 }
-.card button.close {
-  color: white;
-  width: 20px;
-  height: 20px;
-  background-color: red;
-  border-radius: 100%;
+span.close {
+  color: red;
   flex-shrink: 0;
   font-size: 12px;
-  opacity: 0;
-  visibility: hidden;
   transition: all .4s;
+  cursor: pointer;
 }
 .card:hover{
   background-color: pink;
-}
-.card:hover button.close{
-  opacity: 100%;
-  visibility: visible;
 }
 /* swiper */
 

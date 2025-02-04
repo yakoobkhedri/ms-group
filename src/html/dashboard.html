@@ -1543,24 +1543,14 @@
                       <div class="sm:col-span-9 col-span-12">
                         <div class="max-w-[340px]">
                           <div class="inputContainer flex items-center flex-wrap gap-2">
-                            <div
+                            <div id="addBtn"
                               class="addButton transition hover:bg-green-700 hover:text-white w-6 h-6 rounded-full flex items-center justify-center bg-green-300 text-green-800 font-bold cursor-pointer text-lg">
                               +</div>
-                            <div class="cardContainer flex items-center flex-wrap gap-2"></div>
-                          </div>
-                          <p class="text-zinc-600 mt-3 text-xs text-justify font-bold">این یک متن تستی برای تست متن مورد نظر برای اینکه بدانیم درست است</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="grid grid-cols-12 items-start gap-2 sm:gap-5 mb-3">
-                      <label class="sm:col-span-3 col-span-12">مهارت ها 2: <span class="text-red-600">*</span></label>
-                      <div class="sm:col-span-9 col-span-12">
-                        <div class="max-w-[340px]">
-                          <div class="inputContainer flex items-center flex-wrap gap-2">
-                            <div
-                              class="addButton transition hover:bg-green-700 hover:text-white w-6 h-6 rounded-full flex items-center justify-center bg-green-300 text-green-800 font-bold cursor-pointer text-lg">
-                              +</div>
-                            <div class="cardContainer flex items-center flex-wrap gap-2"></div>
+                              <div id="inputContainer">
+                                <input required type="text" id="cardInput" name="cardName" placeholder="متن را وارد کنید">
+                            </div>
+                        
+                            <div id="cardsContainer" class="flex items-center flex-wrap gap-2"></div>
                           </div>
                           <p class="text-zinc-600 mt-3 text-xs text-justify font-bold">این یک متن تستی برای تست متن مورد نظر برای اینکه بدانیم درست است</p>
                         </div>
