@@ -1,32 +1,45 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const addButton = document.getElementById("addButton");
-    const inputContainer = document.getElementById("inputContainer");
-    const inputBox = document.getElementById("inputBox");
-    const cardContainer = document.getElementById("cardContainer");
-    let items = [];
+    const addButtons = document.querySelectorAll(".addButton");
+    const cardContainers = document.querySelectorAll(".cardContainer");
+    let itemsArray = Array.from({ length: addButtons.length }, () => []);
+    let activeInputBox = null;
 
-    addButton.addEventListener("click", () => {
-        inputBox.classList.add('active');
-        inputBox.focus();
+    addButtons.forEach((button, btnIndex) => {
+        button.addEventListener("click", () => {
+            if (activeInputBox && activeInputBox.value.trim() !== "") {
+                return;
+            }
+            if (activeInputBox) {
+                activeInputBox.remove();
+            }
+            
+            let inputBox = document.createElement("input");
+            inputBox.type = "text";
+            inputBox.classList.add("inputBox");
+            inputBox.setAttribute("required", "true");
+            cardContainers[btnIndex].parentNode.insertBefore(inputBox, cardContainers[btnIndex]);
+            inputBox.focus();
+            activeInputBox = inputBox;
+
+            inputBox.addEventListener("keydown", (event) => {
+                if (event.key === "Enter" && inputBox.value.trim() !== "") {
+                    const text = inputBox.value.trim();
+                    itemsArray[btnIndex].push(text);
+                    inputBox.remove();
+                    activeInputBox = null;
+                    updateCards(btnIndex);
+                }
+            });
+        });
     });
 
-    inputBox.addEventListener("keydown", (event) => {
-        if (event.key === "Enter" && inputBox.value.trim() !== "") {
-            event.preventDefault();
-            const text = inputBox.value.trim();
-            items.push(text);
-            inputBox.value = "";
-            updateCards();
-        }
-    });
-
-    function updateCards() {
-        cardContainer.innerHTML = "";
-        items.forEach((item, index) => {
+    function updateCards(index) {
+        cardContainers[index].innerHTML = "";
+        itemsArray[index].forEach((item, itemIndex) => {
             const card = document.createElement("div");
             card.classList.add("card");
-            card.innerHTML = `<span>${item}</span> <button class="close" data-index="${index}">X</button>`;
-            cardContainer.appendChild(card);
+            card.innerHTML = `<span>${item}</span> <button class="close" data-index="${itemIndex}" data-btnindex="${index}">X</button>`;
+            cardContainers[index].appendChild(card);
         });
         attachCloseEvents();
     }
@@ -34,9 +47,10 @@ document.addEventListener("DOMContentLoaded", () => {
     function attachCloseEvents() {
         document.querySelectorAll(".close").forEach(button => {
             button.addEventListener("click", (event) => {
-                const index = event.target.getAttribute("data-index");
-                items.splice(index, 1);
-                updateCards();
+                const itemIndex = event.target.getAttribute("data-index");
+                const btnIndex = event.target.getAttribute("data-btnindex");
+                itemsArray[btnIndex].splice(itemIndex, 1);
+                updateCards(btnIndex);
             });
         });
     }
