@@ -1399,30 +1399,30 @@
                 <img alt="shape" src="../img/Vector 789.png"
                   class="absolute z-0 ltr:[transform:rotateY(180deg)] w-[247px] sm:w-[389px] h-[60px] -top-4 sm:-top-[17px] rtl:right-4 ltr:left-4">
                   <!-- form -->
-                <form class="mt-14">
+                <form class="mt-14 mainForm">
                   <div class="mt-8">
-                    <div class="grid grid-cols-12 items-center gap-2 sm:gap-5 mb-3">
+                    <div class="grid grid-cols-12 items-center gap-2 sm:gap-5 mb-5">
                       <label class="sm:col-span-3 col-span-12">نام خانوادگی: <span class="text-red-600">*</span></label>
                       <div class="sm:col-span-9 col-span-12">
-                        <input placeholder="لطفا نام را وارد نمایید..."
+                        <input required placeholder="لطفا نام را وارد نمایید..."
                           class="max-[640px]:max-w-full max-w-[340px] w-full block outline-none rounded-[4px] px-2 border border-[#aaa] h-[38px]" />
                       </div>
                     </div>
-                    <div class="grid grid-cols-12 items-center gap-2 sm:gap-5 mb-3">
+                    <div class="grid grid-cols-12 items-center gap-2 sm:gap-5 mb-5">
                       <label class="sm:col-span-3 col-span-12">نام: <span class="text-red-600">*</span></label>
                       <div class="sm:col-span-9 col-span-12">
                         <input placeholder="لطفا نام خانوادگی را وارد نمایید..."
                           class="max-[640px]:max-w-full max-w-[340px] w-full block outline-none rounded-[4px] px-2 border border-[#aaa] h-[38px]" />
                       </div>
                     </div>
-                    <div class="grid grid-cols-12 items-center gap-2 sm:gap-5 mb-3">
+                    <div class="grid grid-cols-12 items-center gap-2 sm:gap-5 mb-5">
                       <label class="sm:col-span-3 col-span-12">کد ملی: <span class="text-red-600">*</span></label>
                       <div class="sm:col-span-9 col-span-12">
                         <input type="number" placeholder="لطفا کد ملی را وارد نمایید..."
                           class="max-[640px]:max-w-full max-w-[340px] w-full block outline-none rounded-[4px] px-2 border border-[#aaa] h-[38px]" />
                       </div>
                     </div>
-                    <div class="grid grid-cols-12 items-center gap-2 sm:gap-5 mb-3">
+                    <div class="grid grid-cols-12 items-center gap-2 sm:gap-5 mb-5">
                       <label class="sm:col-span-3 col-span-12">استان: <span class="text-red-600">*</span></label>
                       <div class="sm:col-span-9 col-span-12">
                         <select class="js-example-basic-single form-select" name="state">
@@ -1434,7 +1434,7 @@
                         </select>
                       </div>
                     </div>
-                    <div class="grid grid-cols-12 items-center gap-2 sm:gap-5 mb-3">
+                    <div class="grid grid-cols-12 items-center gap-2 sm:gap-5 mb-5">
                       <label class="sm:col-span-3 col-span-12">شهر: <span class="text-red-600">*</span></label>
                       <div class="sm:col-span-9 col-span-12">
                         <select class="js-example-basic-single form-select" name="state">
@@ -1446,7 +1446,7 @@
                         </select>
                       </div>
                     </div>
-                    <div class="grid grid-cols-12 items-center gap-2 sm:gap-5 mb-3">
+                    <div class="grid grid-cols-12 items-center gap-2 sm:gap-5 mb-5">
                       <label class="sm:col-span-3 col-span-12">مهارت ها: <span class="text-red-600">*</span></label>
                       <div class="sm:col-span-9 col-span-12">
                         <select class="form-select js-example-basic-single" multiple="multiple">
@@ -1458,7 +1458,7 @@
                         </select>
                       </div>
                     </div>
-                    <div class="grid grid-cols-12 items-center gap-2 sm:gap-5 mb-3">
+                    <div class="grid grid-cols-12 items-center gap-2 sm:gap-5 mb-5">
                       <label class="sm:col-span-3 col-span-12">جنسیت: <span class="text-red-600">*</span></label>
                       <div class="sm:col-span-9 col-span-12">
                         <div class="flex items-center gap-5">
@@ -1499,7 +1499,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="grid grid-cols-12 items-center gap-2 sm:gap-5 mb-3">
+                    <div class="grid grid-cols-12 items-center gap-2 sm:gap-5 mb-5">
                       <label class="sm:col-span-3 col-span-12">ارسال خبرنامه: <span
                           class="text-red-600">*</span></label>
                       <div class="sm:col-span-9 col-span-12">
@@ -1521,7 +1521,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="grid grid-cols-12 items-center gap-2 sm:gap-5 mb-3">
+                    <div class="grid grid-cols-12 items-center gap-2 sm:gap-5 mb-5">
                       <label class="sm:col-span-3 col-span-12">آپلود عکس: <span class="text-red-600">*</span></label>
                       <div class="sm:col-span-9 col-span-12">
                         <label for="uploadFile1"
@@ -1538,20 +1538,29 @@
                         </label>
                       </div>
                     </div>
-                    <div class="grid grid-cols-12 items-start gap-2 sm:gap-5 mb-3">
+                    <div class="grid grid-cols-12 items-start gap-2 sm:gap-5 mb-5">
                       <label class="sm:col-span-3 col-span-12">مهارت ها: <span class="text-red-600">*</span></label>
                       <div class="sm:col-span-9 col-span-12">
-                        <div class="max-w-[340px]">
-                          <div class="inputContainer flex items-center flex-wrap gap-2">
-                            <div id="addBtn"
-                              class="addButton transition hover:bg-green-700 hover:text-white w-6 h-6 rounded-full flex items-center justify-center bg-green-300 text-green-800 font-bold cursor-pointer text-lg">
-                              +</div>
-                              <div id="inputContainer">
-                                <input required type="text" id="cardInput" name="cardName" placeholder="متن را وارد کنید">
-                            </div>
-                        
-                            <div id="cardsContainer" class="flex items-center flex-wrap gap-2"></div>
-                          </div>
+                        <div class="max-[640px]:max-w-full max-w-[340px]">
+                          <div class="cardComponent"></div>
+                          <p class="text-zinc-600 mt-3 text-xs text-justify font-bold">این یک متن تستی برای تست متن مورد نظر برای اینکه بدانیم درست است</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="grid grid-cols-12 items-start gap-2 sm:gap-5 mb-5">
+                      <label class="sm:col-span-3 col-span-12">مهارت ها 2: <span class="text-red-600">*</span></label>
+                      <div class="sm:col-span-9 col-span-12">
+                        <div class="max-[640px]:max-w-full max-w-[340px]">
+                          <div class="cardComponent"></div>
+                          <p class="text-zinc-600 mt-3 text-xs text-justify font-bold">این یک متن تستی برای تست متن مورد نظر برای اینکه بدانیم درست است</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="grid grid-cols-12 items-start gap-2 sm:gap-5 mb-5">
+                      <label class="sm:col-span-3 col-span-12">مهارت ها 3: <span class="text-red-600">*</span></label>
+                      <div class="sm:col-span-9 col-span-12">
+                        <div class="max-[640px]:max-w-full max-w-[340px]">
+                          <div class="cardComponent"></div>
                           <p class="text-zinc-600 mt-3 text-xs text-justify font-bold">این یک متن تستی برای تست متن مورد نظر برای اینکه بدانیم درست است</p>
                         </div>
                       </div>
