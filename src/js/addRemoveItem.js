@@ -120,8 +120,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 cardsInput.value = cardsData;
 
                 // ارسال فرم
-                // form.submit();
-                console.log(cardsInput)
+                form.submit();
+                // console.log(cardsInput);
             }
         });
     });
