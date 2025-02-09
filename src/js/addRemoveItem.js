@@ -111,7 +111,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 errorMessage.textContent = 'لطفا حداقل یک کارت اضافه کنید.';
             } else {
                 errorMessage.textContent = '';
-                 form.submit();
+
+                // تبدیل آرایه کارت‌ها به JSON
+                const cardsData = JSON.stringify(cards);
+
+                // ذخیره داده‌ها در input مخفی
+                const cardsInput = form.querySelector('input[name="cardsData"]');
+                cardsInput.value = cardsData;
+
+                // ارسال فرم
+                // form.submit();
+                console.log(cardsInput)
             }
         });
     });
