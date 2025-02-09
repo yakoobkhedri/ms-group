@@ -111,8 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 errorMessage.textContent = 'لطفا حداقل یک کارت اضافه کنید.';
             } else {
                 errorMessage.textContent = '';
-                console.log('Form Submitted:', { cards });
-                alert('فرم با موفقیت ارسال شد!');
+                 form.submit();
             }
         });
     });
