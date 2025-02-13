@@ -118,6 +118,9 @@ header ul li.active::after{
 .mobileMenu.active{
   display: block;
 }
+.dropdownBtn.active img:first-child{
+  opacity: 0;
+}
 .dropdownBtn .arrowSvg.active,.dropdownBtn2 .arrowSvg.active {
   transform: rotate(0);
 }

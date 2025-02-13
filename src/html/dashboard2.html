@@ -594,7 +594,7 @@
         <div class="flex p-4 sm:p-[22px] xl:gap-11 gap-5 rounded-[20px] bg-[#F8F7FF]">
           <!-- sidebar -->
           <div id="sidebar"
-            class="lg:rounded-[20px] bg-purple w-[270px] pb-[185px] lg:inset-y-auto inset-y-0 z-10 h-screen overflow-y-auto lg:overflow-y-visible rtl:lg:right-0 rtl:-right-72 ltr:lg:left-0 ltr:-left-72 transition fixed lg:relative sidebar lg:flex-shrink-0">
+            class="lg:rounded-[20px] bg-purple w-[270px] pb-[185px] lg:inset-y-auto inset-y-0 z-10 min-h-screen h-full overflow-y-auto lg:overflow-y-visible rtl:lg:right-0 rtl:-right-72 ltr:lg:left-0 ltr:-left-72 transition fixed lg:relative sidebar lg:flex-shrink-0">
             <!-- shape -->
             <div class="absolute rounded-b-[10px] bg-[#DAD1FF] h-2 inset-x-0 -bottom-2 hidden lg:block mx-6"></div>
             <!-- close -->
@@ -702,27 +702,47 @@
                         class="rtl:mr-auto ltr:ml-auto ltr:rotate-180">
                     </a>
                   </li>
-                  <li>
+                  <li class="group">
                     <a
-                      class="relative py-[18px] flex items-center gap-2 group hover:text-white transition text-[#FFFFFF80]">
+                      class="dropdownBtn relative py-[18px] flex items-center gap-2 group-hover:text-white transition text-[#FFFFFF80]">
                       <img alt="shape" src="../img/svg/Rectangle 65.svg"
                         class="absolute -z-0 transition h-10 inset-y-0 my-auto opacity-0 invisible group-hover:visible group-hover:opacity-100 rtl:right-0 group-hover:rtl:-right-6 ltr:left-0 group-hover:ltr:-left-6 ltr:-rotate-180">
                       <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path class="group-hover:stroke-white transition"
-                          d="M9.11992 8.6525C9.04492 8.645 8.95492 8.645 8.87242 8.6525C7.08742 8.5925 5.66992 7.13 5.66992 5.33C5.66992 3.4925 7.15492 2 8.99992 2C10.8374 2 12.3299 3.4925 12.3299 5.33C12.3224 7.13 10.9049 8.5925 9.11992 8.6525Z"
-                          stroke="#FFFFFF80" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path class="group-hover:stroke-white transition"
-                          d="M5.37004 11.42C3.55504 12.635 3.55504 14.615 5.37004 15.8225C7.43254 17.2025 10.815 17.2025 12.8775 15.8225C14.6925 14.6075 14.6925 12.6275 12.8775 11.42C10.8225 10.0475 7.44004 10.0475 5.37004 11.42Z"
-                          stroke="#FFFFFF80" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path class="group-hover:fill-white transition"
+                          d="M16.5 6.89V3.485C16.5 2.4275 16.02 2 14.8275 2H11.7975C10.605 2 10.125 2.4275 10.125 3.485V6.8825C10.125 7.9475 10.605 8.3675 11.7975 8.3675H14.8275C16.02 8.375 16.5 7.9475 16.5 6.89Z"
+                          fill="#FFFFFF80" />
+                        <path class="group-hover:fill-white transition"
+                          d="M16.5 15.3275V12.2975C16.5 11.105 16.02 10.625 14.8275 10.625H11.7975C10.605 10.625 10.125 11.105 10.125 12.2975V15.3275C10.125 16.52 10.605 17 11.7975 17H14.8275C16.02 17 16.5 16.52 16.5 15.3275Z"
+                          fill="#FFFFFF80" />
+                        <path class="group-hover:fill-white transition"
+                          d="M7.875 6.89V3.485C7.875 2.4275 7.395 2 6.2025 2H3.1725C1.98 2 1.5 2.4275 1.5 3.485V6.8825C1.5 7.9475 1.98 8.3675 3.1725 8.3675H6.2025C7.395 8.375 7.875 7.9475 7.875 6.89Z"
+                          fill="#FFFFFF80" />
+                        <path class="group-hover:fill-white transition"
+                          d="M7.875 15.3275V12.2975C7.875 11.105 7.395 10.625 6.2025 10.625H3.1725C1.98 10.625 1.5 11.105 1.5 12.2975V15.3275C1.5 16.52 1.98 17 3.1725 17H6.2025C7.395 17 7.875 16.52 7.875 15.3275Z"
+                          fill="#FFFFFF80" />
                       </svg>
-                      <p>پروفایل کاربری</p>
+                      <p>لیست ها</p>
                       <img alt="icon" src="../img/svg/arrow-down (4).svg"
-                        class="rtl:mr-auto ltr:ml-auto ltr:rotate-180">
+                        class="rtl:mr-auto ltr:ml-auto ltr:rotate-180 arrowSvg">
                     </a>
+                    <div class="dropdownContent rtl:pr-4 ltr:pl-4">
+                      <a class="mb-4 flex items-center gap-3 hover:text-[#f6ab36] group transition text-sm">
+                        <div class="w-2 h-2 rounded-full bg-white"></div>
+                        <p class="opacity-70 group-hover:opacity-100">لیست اول</p>
+                      </a>
+                      <a class="mb-4 flex items-center gap-3 hover:text-[#f6ab36] group transition text-sm">
+                        <div class="w-2 h-2 rounded-full bg-white"></div>
+                        <p class="opacity-70 group-hover:opacity-100">لیست دوم</p>
+                      </a>
+                      <a class="mb-4 flex items-center gap-3 hover:text-[#f6ab36] group transition text-sm">
+                        <div class="w-2 h-2 rounded-full bg-white"></div>
+                        <p class="opacity-70 group-hover:opacity-100">لیست سوم</p>
+                      </a>
+                    </div>
                   </li>
-                  <li>
+                  <li class="group">
                     <a
-                      class="relative py-[18px] flex items-center gap-2 group hover:text-white transition text-[#FFFFFF80]">
+                      class="dropdownBtn relative py-[18px] flex items-center gap-2 group-hover:text-white transition text-[#FFFFFF80]">
                       <img alt="shape" src="../img/svg/Rectangle 65.svg"
                         class="absolute -z-0 transition h-10 inset-y-0 my-auto opacity-0 invisible group-hover:visible group-hover:opacity-100 rtl:right-0 group-hover:rtl:-right-6 ltr:left-0 group-hover:ltr:-left-6 ltr:-rotate-180">
                       <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -733,10 +753,24 @@
                           d="M5.37004 11.42C3.55504 12.635 3.55504 14.615 5.37004 15.8225C7.43254 17.2025 10.815 17.2025 12.8775 15.8225C14.6925 14.6075 14.6925 12.6275 12.8775 11.42C10.8225 10.0475 7.44004 10.0475 5.37004 11.42Z"
                           stroke="#FFFFFF80" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                       </svg>
-                      <p>پروفایل کاربری</p>
+                      <p>لیست ها</p>
                       <img alt="icon" src="../img/svg/arrow-down (4).svg"
-                        class="rtl:mr-auto ltr:ml-auto ltr:rotate-180">
+                        class="rtl:mr-auto ltr:ml-auto ltr:rotate-180 arrowSvg">
                     </a>
+                    <div class="dropdownContent rtl:pr-4 ltr:pl-4">
+                      <a class="mb-4 flex items-center gap-3 hover:text-[#f6ab36] group transition text-sm">
+                        <div class="w-2 h-2 rounded-full bg-white"></div>
+                        <p class="opacity-70 group-hover:opacity-100">لیست اول</p>
+                      </a>
+                      <a class="mb-4 flex items-center gap-3 hover:text-[#f6ab36] group transition text-sm">
+                        <div class="w-2 h-2 rounded-full bg-white"></div>
+                        <p class="opacity-70 group-hover:opacity-100">لیست دوم</p>
+                      </a>
+                      <a class="mb-4 flex items-center gap-3 hover:text-[#f6ab36] group transition text-sm">
+                        <div class="w-2 h-2 rounded-full bg-white"></div>
+                        <p class="opacity-70 group-hover:opacity-100">لیست سوم</p>
+                      </a>
+                    </div>
                   </li>
                   <li>
                     <a

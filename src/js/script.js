@@ -5,6 +5,7 @@ let hamIcon = document.getElementById('hamIcon');
 
 dropdownBtn.forEach((item)=>{
   item.addEventListener('click', function () {
+    item.classList.toggle('active');
     item.querySelector('.arrowSvg').classList.toggle('active');
     item.nextElementSibling.classList.toggle('active');
   })
